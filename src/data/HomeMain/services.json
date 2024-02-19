@@ -1,0 +1,44 @@
+[
+  {
+    "id": 1,
+    "image": "assets/imgs/serv-icons/0.png",
+    "type": "Product Design",
+    "title": "Web Application",
+    "text": "Creating a higher spacing and how people move through a unique."
+  },
+  {
+    "id": 2,
+    "image": "assets/imgs/serv-icons/1.png",
+    "type": "Customs Services",
+    "title": "Website Development",
+    "text": "Creating a higher spacing and how people move through a unique."
+  },
+  {
+    "id": 3,
+    "image": "assets/imgs/serv-icons/2.png",
+    "type": "Product Development",
+    "title": "Mobile Application",
+    "text": "Creating a higher spacing and how people move through a unique."
+  },
+  {
+    "id": 4,
+    "image": "assets/imgs/serv-icons/0.png",
+    "type": "Product Design",
+    "title": "Digital Marketing",
+    "text": "Creating a higher spacing and how people move through a unique."
+  },
+  {
+    "id": 5,
+    "image": "assets/imgs/serv-icons/1.png",
+    "type": "Graphic Design",
+    "title": "Graphic Design",
+    "text": "Creating a higher spacing and how people move through a unique."
+  },
+  {
+    "id": 6,
+    "image": "assets/imgs/serv-icons/2.png",
+    "type": "Product Development",
+    "title": "Video & Animation",
+    "text": "Creating a higher spacing and how people move through a unique."
+  }
+]
