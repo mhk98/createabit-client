@@ -27,13 +27,14 @@ const Login = () => {
 
     try {
       const response = await axios.post(
-        "https://createabit-backend.onrender.com/api/v1/user/login",
-        // "https://createabit-backend.onrender.com/api/v1/user/login",
+        "http://localhost:5000/api/v1/user/login",
+        // "http://localhost:5000/api/v1/user/login",
         formData
       );
 
       if (response.data.data.accessToken) {
         toast.success("Successfully Logged In");
+        localStorage.setItem("userId", response.data.data.user.User_ID);
         router.push("/");
       }
       storgeUserInfo({ accessToken: response.data.data.accessToken });

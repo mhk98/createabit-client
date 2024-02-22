@@ -8,8 +8,9 @@ import { useEffect, useState } from "react";
 
 function DarkNavbar({ lightMode, alwaysDark, darkOnScroll }) {
   const router = useRouter();
-
-  const { data, isLoading, isError, error } = useGetAllCartQuery();
+  const userId =
+    typeof window !== "undefined" ? localStorage.getItem("userId") : null;
+  const { data, isLoading, isError, error } = useGetAllCartQuery(userId);
   const [cart, setCart] = useState([]);
 
   useEffect(() => {
@@ -34,7 +35,7 @@ function DarkNavbar({ lightMode, alwaysDark, darkOnScroll }) {
   //   setCarts(savedCart);
   // }, []);
 
-  // console.log("carts", carts.length);
+  console.log("carts", cart);
 
   useEffect(() => {
     if (darkOnScroll) {

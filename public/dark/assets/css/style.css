@@ -524,7 +524,7 @@ img {
   border-radius: 50%;
 }
 
-.testimonial-content{
+.testimonial-content {
   margin-bottom: 250px;
 }
 
@@ -9890,6 +9890,13 @@ header.in-box {
 @media screen and (max-width: 768px) {
   .service-slider {
     display: none;
+  }
+
+  .hamenu .menu-links {
+    color: #fff;
+    margin-top: -60px;
+    height: 500px;
+    overflow: auto;
   }
 
   .service-slider1 {

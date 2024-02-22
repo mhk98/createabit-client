@@ -12,13 +12,15 @@ import { useEffect, useState } from "react";
 import toast from "react-hot-toast";
 
 function Products() {
+  const userId =
+    typeof window !== "undefined" ? localStorage.getItem("userId") : null;
+
   function handlePriceInput(e) {
     const priceInput = e.currentTarget;
     const priceGap = 1000;
     const minPrice = parseInt(priceInput[0].value);
     const maxPrice = parseInt(priceInput[1].value);
     const rangeInput = document.querySelectorAll(".range-input input");
-
     if (maxPrice - minPrice >= priceGap && maxPrice <= rangeInput[1].max) {
       if (e.currentTarget.className === "input-min") {
         rangeInput[0].value = minPrice;
@@ -85,7 +87,7 @@ function Products() {
 
   const [createCart] = useCreateCartMutation();
 
-  const addToCart = (product) => {
+  const addToCart = (product, Id) => {
     if (cart.some((item) => item.Product_Id === product.Product_Id)) {
       alert("This product is already in the cart.");
     } else {
@@ -93,7 +95,14 @@ function Products() {
       const updatedCart = [...cart, product];
 
       setCart(updatedCart);
-      createCart(product);
+      const data = {
+        title: product.title,
+        price: product.price,
+        Image: product.Image,
+        usertblUserID: Id,
+      };
+      console.log("cart data here", product);
+      createCart(data);
       // Save the updated cart data to local storage
       localStorage.setItem("cart", JSON.stringify(updatedCart));
 
@@ -371,13 +380,13 @@ function Products() {
                     <div className="item mb-50">
                       <div className="img">
                         <Image
-                          src={`https://createabit-backend.onrender.com/${item.Image}`}
+                          src={`http://localhost:5000/${item.Image}`}
                           alt=""
                           width={300}
                           height={200}
                         />
                         <button
-                          onClick={() => addToCart(item)}
+                          onClick={() => addToCart(item, userId)}
                           className="text-white add-cart"
                         >
                           Add to Cart
@@ -409,13 +418,13 @@ function Products() {
                     <div className="item mb-50">
                       <div className="img">
                         <Image
-                          src={`https://createabit-backend.onrender.com/${item.Image}`}
+                          src={`http://localhost:5000/${item.Image}`}
                           alt=""
                           width={300}
                           height={200}
                         />
                         <button
-                          onClick={() => addToCart(item)}
+                          onClick={() => addToCart(item, userId)}
                           className="text-white add-cart"
                         >
                           Add to Cart

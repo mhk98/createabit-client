@@ -10384,6 +10384,13 @@ header.in-box {
     margin-top: 160px !important;
   }
 
+  .hamenu .menu-links {
+    color: #fff;
+    margin-top: -60px;
+    height: 500px;
+    overflow: auto;
+  }
+
   .section-padding {
     padding: 60px;
   }

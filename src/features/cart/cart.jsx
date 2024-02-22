@@ -3,8 +3,8 @@ import { createApi, fetchBaseQuery } from "@reduxjs/toolkit/query/react";
 export const productCartApi = createApi({
   reducerPath: "productCartApi",
   baseQuery: fetchBaseQuery({
-    baseUrl: "https://createabit-backend.onrender.com/api/v1/",
-    // baseUrl: "https://createabit-backend.onrender.com/api/v1/",
+    baseUrl: "http://localhost:5000/api/v1/",
+    // baseUrl: "http://localhost:5000/api/v1/",
   }),
 
   tagTypes: ["carts"], // Define the tag type
@@ -27,8 +27,8 @@ export const productCartApi = createApi({
     }),
 
     getAllCart: build.query({
-      query: () => ({
-        url: "/cart",
+      query: (id) => ({
+        url: `/cart/${id}`,
       }),
       providesTags: ["carts"],
 
