@@ -10,13 +10,15 @@ import { loadStripe } from "@stripe/stripe-js";
 import { Toaster } from "react-hot-toast";
 import { Provider } from "react-redux";
 import "swiper/css/bundle";
+import { isLoggedIn } from "@/components/services/auth.service";
+import { useRouter } from "next/navigation";
+import { useEffect, useState } from "react";
 const stripePromise = loadStripe(process.env.NEXT_PUBLIC_STRIPE_KEY);
 
 function App({ Component, pageProps }) {
   const getLayout = Component.getLayout || ((page) => page);
 
-  /**
-   * const router = useRouter();
+  const router = useRouter();
   const [isLoading, setIsLoading] = useState(false);
   const userLoggedIn = isLoggedIn();
   useEffect(() => {
@@ -26,10 +28,9 @@ function App({ Component, pageProps }) {
     setIsLoading(true);
   }, [router, isLoading]);
 
-  // if (!isLoading) {
-  //   return <p>Loading...</p>;
-  // }
-   */
+  if (!isLoading) {
+    return <p>Loading...</p>;
+  }
 
   return getLayout(
     <>
