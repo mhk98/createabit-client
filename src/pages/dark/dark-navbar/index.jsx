@@ -176,7 +176,7 @@ function DarkNavbar({ lightMode, alwaysDark, darkOnScroll }) {
               </div>
             </div>
           </div>
-          {/* <div className="col-lg-2">Classic Mode</div> */}
+
           <div className="col-lg-5">
             <div className="menu-links">
               <ul className="main-menu rest">

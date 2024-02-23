@@ -32,7 +32,14 @@ function App({ Component, pageProps }) {
   //   return <p>Loading...</p>;
   // }
 
-  console.log = console.warn = console.error = console.trace = console.info = console.dir = console.debug = () => {};
+  console.log =
+    console.warn =
+    console.error =
+    console.trace =
+    console.info =
+    console.dir =
+    console.debug =
+      () => {};
   return getLayout(
     <>
       <Head>
