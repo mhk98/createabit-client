@@ -10551,7 +10551,17 @@ header.in-box {
     width: 500px;
   }
 }
+
+@media only screen and (min-width: 1366px) {
+  .addtocart {
+    margin-left: 45%;
+  }
+}
+
 @media only screen and (min-width: 1400px) {
+  .addtocart {
+    margin-left: 53%;
+  }
   .product_section {
     display: flex;
     justify-content: space-between;

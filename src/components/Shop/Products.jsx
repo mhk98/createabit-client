@@ -125,6 +125,18 @@ function Products() {
 
   console.log("data1", data1);
 
+  const userLoggedIn = isLoggedIn();
+
+  const handleAlertCheckout = () => {
+    const confirmed = window.confirm(
+      "Please login first. Do you want to go to the login page?"
+    );
+
+    if (confirmed) {
+      router.push("/dark/login");
+    }
+  };
+
   return (
     <div className="row">
       <div className="col-lg-3">
@@ -380,17 +392,26 @@ function Products() {
                     <div className="item mb-50">
                       <div className="img">
                         <Image
-                          src={`http://localhost:5000/${item.Image}`}
+                          src={`https://createabit-server-uao6.onrender.com/${item.Image}`}
                           alt=""
                           width={300}
                           height={200}
                         />
-                        <button
-                          onClick={() => addToCart(item, userId)}
-                          className="text-white add-cart"
-                        >
-                          Add to Cart
-                        </button>
+                        {userLoggedIn ? (
+                          <button
+                            onClick={() => addToCart(item, userId)}
+                            className="text-white add-cart"
+                          >
+                            Add to Cart
+                          </button>
+                        ) : (
+                          <button
+                            onClick={handleAlertCheckout}
+                            className="text-white add-cart"
+                          >
+                            Add to Cart
+                          </button>
+                        )}
                         <span className="fav">
                           <i className="far fa-heart"></i>
                         </span>
@@ -418,17 +439,27 @@ function Products() {
                     <div className="item mb-50">
                       <div className="img">
                         <Image
-                          src={`http://localhost:5000/${item.Image}`}
+                          src={`https://createabit-server-uao6.onrender.com/${item.Image}`}
                           alt=""
                           width={300}
                           height={200}
                         />
-                        <button
-                          onClick={() => addToCart(item, userId)}
-                          className="text-white add-cart"
-                        >
-                          Add to Cart
-                        </button>
+
+                        {userLoggedIn ? (
+                          <button
+                            onClick={() => addToCart(item, userId)}
+                            className="text-white add-cart"
+                          >
+                            Add to Cart
+                          </button>
+                        ) : (
+                          <button
+                            onClick={handleAlertCheckout}
+                            className="text-white add-cart"
+                          >
+                            Add to Cart
+                          </button>
+                        )}
                         <span className="fav">
                           <i className="far fa-heart"></i>
                         </span>

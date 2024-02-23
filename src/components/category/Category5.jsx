@@ -58,7 +58,7 @@ const Category5 = () => {
           <div className="item mb-50">
             <div className="img">
               <Image
-                src={`http://localhost:5000/${item.image}`}
+                src={`https://createabit-server-uao6.onrender.com/${item.image}`}
                 alt=""
                 width={300}
                 height={200}

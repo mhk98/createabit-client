@@ -15,8 +15,9 @@ function Cart({ lightMode }) {
   const router = useRouter();
   const userLoggedIn = isLoggedIn();
   console.log("userLoggedIn", userLoggedIn);
-
-  const { data, isLoading, isError, error } = useGetAllCartQuery();
+  const userId =
+    typeof window !== "undefined" ? localStorage.getItem("userId") : null;
+  const { data, isLoading, isError, error } = useGetAllCartQuery(userId);
   const [cart, setCart] = useState([]);
 
   useEffect(() => {
@@ -178,7 +179,7 @@ function Cart({ lightMode }) {
                             <div className="img icon-img-80">
                               {/* <Image src={item.image} alt={item.title} /> */}
                               <Image
-                                src={`http://localhost:5000/${item.Image}`}
+                                src={`https://createabit-server-uao6.onrender.com/${item.Image}`}
                                 alt=""
                                 width={70}
                                 height={50}

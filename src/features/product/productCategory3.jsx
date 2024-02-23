@@ -3,7 +3,7 @@ import { createApi, fetchBaseQuery } from "@reduxjs/toolkit/query/react";
 export const productCategory3Api = createApi({
   reducerPath: "productCategory3Api",
   baseQuery: fetchBaseQuery({
-    baseUrl: "http://localhost:5000/api/v1/",
+    baseUrl: "https://createabit-server-uao6.onrender.com/api/v1/",
   }),
   endpoints: (builder) => ({
     getProductCategory3: builder.query({

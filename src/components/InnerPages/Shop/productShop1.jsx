@@ -23,7 +23,7 @@ const ProductShop1 = () => {
         {products?.map((product) => (
           <div className="col-lg-3" key={product.id}>
             <Image
-              src={`http://localhost:5000/${product.image}`}
+              src={`https://createabit-server-uao6.onrender.com/${product.image}`}
               alt=""
               width={300}
               height={200}
