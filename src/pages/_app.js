@@ -18,19 +18,19 @@ const stripePromise = loadStripe(process.env.NEXT_PUBLIC_STRIPE_KEY);
 function App({ Component, pageProps }) {
   const getLayout = Component.getLayout || ((page) => page);
 
-  const router = useRouter();
-  const [isLoading, setIsLoading] = useState(false);
-  const userLoggedIn = isLoggedIn();
-  useEffect(() => {
-    if (!userLoggedIn) {
-      router.push("/dark/login");
-    }
-    setIsLoading(true);
-  }, [router, isLoading]);
+  // const router = useRouter();
+  // const [isLoading, setIsLoading] = useState(false);
+  // const userLoggedIn = isLoggedIn();
+  // useEffect(() => {
+  //   if (!userLoggedIn) {
+  //     router.push("/dark/login");
+  //   }
+  //   setIsLoading(true);
+  // }, [router, isLoading]);
 
-  if (!isLoading) {
-    return <p>Loading...</p>;
-  }
+  // if (!isLoading) {
+  //   return <p>Loading...</p>;
+  // }
 
   console.log = console.warn = console.error = console.trace = console.info = console.dir = console.debug = () => {};
   return getLayout(
