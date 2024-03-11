@@ -1,9 +1,11 @@
 function Header({ data, subBg }) {
   return (
     <header
-      className={`page-header section-padding pb-0 ${subBg ? "sub-bg" : ""}`}
+      className={`page-header section-padding pb-0 header-cont ${
+        subBg ? "sub-bg" : ""
+      }`}
     >
-      <div className="container mt-80">
+      <div className="container">
         <div className="row">
           <div className="col-lg-8">
             <div className="caption">
@@ -12,7 +14,7 @@ function Header({ data, subBg }) {
                 {data.title}
               </h1>
               <div className=" offset-lg-4">
-                <div className=" mt-30 ">
+                <div className=" mt-30">
                   <p className="header-content">
                     CreateAbit designs is a renowned name in the digital world.
                     We are a reputed marketing and branding agency based in
@@ -34,7 +36,7 @@ function Header({ data, subBg }) {
           </div>
         </div> */}
       </div>
-      <div className="pb-0 main-marq xlrg section-padding">
+      <div className="pb-0 main-marq xlrg section-padding marq-text">
         <div className="slide-har st1">
           <div className="box">
             {new Array(5).fill().map((_, i) => (

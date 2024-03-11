@@ -44,9 +44,9 @@ const CheckoutForm = ({ checkoutInfo }) => {
     if (Price > 0) {
       axios
         .post(
-          "https://createabit-server-uao6.onrender.com/api/v1/payment/create-payment-intent",
+          "https://createabit-backend.onrender.com/api/v1/payment/create-payment-intent",
 
-          // "https://createabit-server-uao6.onrender.com/api/v1/payment/create-payment-intent",
+          // "https://createabit-backend.onrender.com/api/v1/payment/create-payment-intent",
           { Price }
         )
         .then((res) => {

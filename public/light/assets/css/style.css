@@ -383,6 +383,21 @@ img {
   text-align: center;
 }
 
+.productshop_video {
+  text-align: center;
+}
+
+.faq-header {
+  padding: 1.2em 1em;
+
+  font-weight: 600;
+
+  background-color: whitesmoke;
+  color: black;
+
+  user-select: none;
+  cursor: pointer;
+}
 .butn.butn-bord {
   border-color: #1d1d1d;
   background: transparent;
@@ -460,6 +475,14 @@ img {
   font-weight: 800px !important;
 }
 
+.differentiator {
+  width: 400px;
+  margin-left: -110px;
+}
+
+.different-cont {
+  margin-left: -90px;
+}
 .butn-circle:after {
   content: "";
   position: absolute;
@@ -475,6 +498,14 @@ img {
   -webkit-transition: all 0.4s;
   -o-transition: all 0.4s;
   transition: all 0.4s;
+}
+
+.header-cont {
+  margin-top: 40px;
+}
+
+.marq-text {
+  margin-top: -40px;
 }
 
 .header-content {
@@ -497,6 +528,10 @@ img {
   -webkit-transition: all 0.4s;
   -o-transition: all 0.4s;
   transition: all 0.4s;
+}
+
+.faq-content p {
+  color: black;
 }
 
 .butn-circle.sml {
@@ -557,7 +592,7 @@ img {
   left: 15px;
   right: 15px;
   bottom: 15px;
-  border: 1px solid rgba(255, 255, 255, 0.5);
+  border: 1px solid #808181;
   border-radius: 50%;
 }
 
@@ -674,6 +709,36 @@ img {
   -o-transition: transform 0.2s linear;
   transition: transform 0.2s linear;
   transition: transform 0.2s linear, -webkit-transform 0.2s linear;
+}
+
+.development-icon {
+  width: 30px;
+}
+
+.application-icon {
+  font-size: 10px;
+  /* background-color: black; */
+  /* color: black; */
+  width: 30px;
+  height: 30px;
+  padding: 20px;
+}
+
+.mobile-icon {
+  /* font-size: 18px; */
+  font-weight: 600;
+  width: 18px;
+}
+
+.digital-icon {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  /* background-color: black; */
+  color: black;
+  padding: 20px;
+  display: block;
+  margin: auto;
 }
 
 .cursor {
@@ -9089,6 +9154,15 @@ header.in-box {
   visibility: visible;
 }
 
+.service-btn-clr {
+  background-color: white;
+  color: black;
+  border: 2px solid black;
+}
+
+.cart-color {
+  color: black;
+}
 .main-shop .shop-products .item .img:hover:after {
   opacity: 0.3;
 }
@@ -9925,6 +9999,28 @@ header.in-box {
   }
 }
 
+@media only screen and (max-width: 600px) {
+  .intelligenttech1 {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 50px;
+  }
+  .laser {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 20px;
+  }
+  .intelligent-laser {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 50px;
+  }
+
+  .purchase {
+    margin-bottom: 100px;
+  }
+}
+
 @media screen and (max-width: 768px) {
   .sm-mb10 {
     margin-bottom: 10px;
@@ -10380,6 +10476,15 @@ header.in-box {
 }
 
 @media only screen and (max-width: 768px) {
+  .faq2 {
+    width: 400px;
+    height: 500px;
+    margin-top: 150px;
+    margin: auto;
+  }
+}
+
+@media only screen and (max-width: 768px) {
   .caption {
     margin-top: 160px !important;
   }
@@ -10415,3 +10520,75 @@ header.in-box {
 }
 
 /* ====================== [ End Responsive ] ====================== */
+
+.productshop_banner {
+  background-image: url("../../assets/imgs/background/14.jpg");
+  width: 100%;
+  height: 500px;
+  text-align: center;
+  align-items: center;
+  display: block;
+  position: relative;
+  margin: 100px 0px;
+}
+
+.productshop_banner_cont {
+  position: absolute;
+  top: 150px;
+}
+
+/* .int-icon {
+  width: 20px;
+} */
+
+.intelligenttech-icon {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  gap: 10px;
+  margin-top: 50px;
+}
+
+.intelligent-image {
+  background-color: white;
+  padding: 20px;
+}
+
+.intelligenttech-package {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.business_gift {
+  background-image: url("../../assets//imgs/sass-img/work/1.jpg");
+  width: 100%;
+  height: 500px;
+  text-align: center;
+  align-items: center;
+  display: block;
+  margin-bottom: 180px;
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover;
+}
+
+.laser {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px;
+}
+.intelligent-laser {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+}
+
+.intelligenttech1 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.wow-btn {
+  color: black;
+}

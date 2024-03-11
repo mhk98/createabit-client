@@ -14,7 +14,7 @@ const ProductShop2 = () => {
     <div className="container">
       {/* Banner part start */}
       <div className="productshop_banner ">
-        <div className="text-middle">
+        <div className="text-center productshop_banner_cont">
           <h1>“The Ultimate 3D Advertising</h1>
           <h1>Display Machine”</h1>
         </div>
@@ -22,7 +22,7 @@ const ProductShop2 = () => {
       {/* Banner part end */}
 
       {/* Branding part start */}
-      <div className="mb-50 productshop_brand row" style={{ margin: "auto" }}>
+      <div className="text-center mb-50 row ">
         <div className="col-lg-3 col-md-6 col-sm-12">
           <h3>Grow your brand</h3>
           <h3>in the palm of</h3>
@@ -78,12 +78,10 @@ const ProductShop2 = () => {
 
       {/* Benefit start */}
       <div>
-        <h1 className="pt-50 pb-40 text-center">
-          Benefits of 3D holographic Sign
-        </h1>
+        <h1 className="pb-40 pt-50">Benefits of 3D holographic Sign</h1>
 
         <div
-          className="benefit_main row justify-between gap-5 align-middle"
+          className="justify-between gap-5 align-middle benefit_main row"
           style={{ margin: "auto" }}
         >
           <div className="col-lg-3 col-md-12 col-sm-12">
@@ -164,7 +162,7 @@ const ProductShop2 = () => {
       <div
         style={{
           paddingBottom: "180px",
-          paddingTop: "90px",
+          paddingTop: "20px",
           textAlign: "center",
         }}
       >
@@ -177,7 +175,7 @@ const ProductShop2 = () => {
 
         {/* product reveiw part start */}
 
-        <div className="product_review row">
+        <div className="gap-5 product_review row">
           <div
             className="col-lg-6 col-md-12 col-sm-12"
             style={{ width: "550px" }}
@@ -213,7 +211,7 @@ const ProductShop2 = () => {
           </div>
         </div>
 
-        <div className="product_review row">
+        <div className="gap-5 product_review row">
           <div
             style={{ textAlign: "left" }}
             className="col-lg-6 col-md-12 col-sm-12"
@@ -250,7 +248,7 @@ const ProductShop2 = () => {
           </div>
         </div>
 
-        <div className="product_review row">
+        <div className="gap-5 product_review row">
           <div
             className="col-lg-6 col-md-12 col-sm-12"
             style={{ width: "550px" }}
@@ -292,13 +290,12 @@ const ProductShop2 = () => {
 
       {/* Background video part start */}
 
-      <div className="productshop_video ">
-        <div>
-          <h1>Watch The Video</h1>
-          <p>Want a thrilling vision of your eye?</p>
-          <p>Have a look at the video that mesmerize your vision.</p>
-        </div>
+      <div className="productshop_video">
+        <h1>Watch The Video</h1>
+        <p>Want a thrilling vision of your eye?</p>
+        <p>Have a look at the video that mesmerize your vision.</p>
       </div>
+
       {/* Background video part end */}
 
       {/* Faq part start */}
@@ -425,7 +422,7 @@ const ProductShop2 = () => {
             </div>
           </section>
 
-          <div className="faq2">
+          <div className=" faq2">
             <Image src={product2} alt="" />
           </div>
         </div>

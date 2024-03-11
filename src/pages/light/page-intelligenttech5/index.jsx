@@ -33,11 +33,11 @@ function PageProductShop1() {
       <main>
         <IntelligentTech5></IntelligentTech5>
       </main>
-      <LightFooter  />
+      <LightFooter />
     </>
   );
 }
 
-PageProductShop1.getLayout = (page) => <Layout>{page}</Layout>;
+PageProductShop1.getLayout = (page) => <Layout lightMode>{page}</Layout>;
 
 export default PageProductShop1;

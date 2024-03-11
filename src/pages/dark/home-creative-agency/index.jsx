@@ -21,6 +21,7 @@ import DarkFooter from "../dark-footer";
 import DarkNavbar from "../dark-navbar";
 import PortfolioClassicGrid2 from "../portfolio-grid-2";
 import PortfolioClassicGrid3 from "../portfolio-grid-3";
+import Marq from "@/components/HomeMain/Marq";
 
 function HomeCreativeAgency() {
   useEffect(() => {
@@ -46,7 +47,7 @@ function HomeCreativeAgency() {
             <Portfolio />
             <PortfolioClassicGrid2 />
             <PortfolioClassicGrid3 />
-            {/* <Marq /> */}
+            <Marq />
             <Clients />
             <Services />
             <ServicesTabs />

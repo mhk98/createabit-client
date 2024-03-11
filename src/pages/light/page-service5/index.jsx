@@ -13,6 +13,7 @@ import Layout from "@/layouts/default";
 import Service5 from "@/components/InnerPages/ServiceDetails/Service5";
 import LightNavbar from "../light-navbar";
 import LightFooter from "../light-footer";
+import ServiceMain from "@/components/InnerPages/ServiceDetails/ServiceMain";
 
 function PageService5() {
   useEffect(() => {
@@ -35,7 +36,8 @@ function PageService5() {
       <LightNavbar></LightNavbar>
       <main>
         <Header data={headerMetadata} subBg={true} />
-        <Service5></Service5>
+        <ServiceMain></ServiceMain>
+
       </main>
       <LightFooter />
     </>

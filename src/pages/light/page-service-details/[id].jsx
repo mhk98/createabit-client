@@ -33,7 +33,7 @@ function PageServiceDetails() {
             <div className="serviceDetails">
               <div>
                 <img
-                  src={`https://createabit-server-uao6.onrender.com/${serviceDetails?.image}`}
+                  src={`https://createabit-backend.onrender.com/${serviceDetails?.image}`}
                   alt=""
                 />
               </div>

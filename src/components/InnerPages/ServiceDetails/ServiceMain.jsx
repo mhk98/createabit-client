@@ -48,7 +48,7 @@ const ServiceMain = () => {
           {/* Your slide items go here */}
           <SplideSlide>
             <button
-              className={`service-butn-md butn-bord radius-30 ${
+              className={`service-btn-clr service-butn-md butn-bord radius-30 ${
                 activeButton === 0 ? "active" : ""
               }`}
               onClick={() => handleButtonClick(0)}
@@ -59,7 +59,7 @@ const ServiceMain = () => {
 
           <SplideSlide>
             <button
-              className={`service-butn-md butn-bord radius-30 ${
+              className={`service-btn-clr service-butn-md butn-bord radius-30 ${
                 activeButton === 1 ? "active" : ""
               }`}
               onClick={() => handleButtonClick(1)}
@@ -70,7 +70,7 @@ const ServiceMain = () => {
 
           <SplideSlide>
             <button
-              className={`service-butn-md butn-bord radius-30 ${
+              className={`service-btn-clr service-butn-md butn-bord radius-30 ${
                 activeButton === 2 ? "active" : ""
               }`}
               onClick={() => handleButtonClick(2)}
@@ -81,7 +81,7 @@ const ServiceMain = () => {
 
           <SplideSlide>
             <button
-              className={`service-butn-md butn-bord radius-30 ${
+              className={`service-btn-clr service-butn-md butn-bord radius-30 ${
                 activeButton === 3 ? "active" : ""
               }`}
               onClick={() => handleButtonClick(3)}
@@ -92,7 +92,7 @@ const ServiceMain = () => {
 
           <SplideSlide>
             <button
-              className={`service-butn-md butn-bord radius-30 ${
+              className={`service-btn-clr service-butn-md butn-bord radius-30 ${
                 activeButton === 4 ? "active" : ""
               }`}
               onClick={() => handleButtonClick(4)}
@@ -103,7 +103,7 @@ const ServiceMain = () => {
 
           <SplideSlide>
             <button
-              className={`service-butn-md butn-bord radius-30 ${
+              className={`service-btn-clr service-butn-md butn-bord radius-30 ${
                 activeButton === 5 ? "active" : ""
               }`}
               onClick={() => handleButtonClick(5)}
@@ -161,7 +161,7 @@ const ServiceMain = () => {
           {/* Your slide items go here */}
           <SplideSlide>
             <button
-              className={`service-butn-md butn-bord radius-30 ${
+              className={`service-btn-clr service-butn-md butn-bord radius-30 ${
                 activeButton === 0 ? "active" : ""
               }`}
               onClick={() => handleButtonClick(0)}
@@ -172,7 +172,7 @@ const ServiceMain = () => {
 
           <SplideSlide>
             <button
-              className={`service-butn-md butn-bord radius-30 ${
+              className={`service-btn-clr service-butn-md butn-bord radius-30 ${
                 activeButton === 1 ? "active" : ""
               }`}
               onClick={() => handleButtonClick(1)}
@@ -183,7 +183,7 @@ const ServiceMain = () => {
 
           <SplideSlide>
             <button
-              className={`service-butn-md butn-bord radius-30 ${
+              className={`service-btn-clr service-btn-clr service-butn-md butn-bord radius-30 ${
                 activeButton === 2 ? "active" : ""
               }`}
               onClick={() => handleButtonClick(2)}
@@ -194,7 +194,7 @@ const ServiceMain = () => {
 
           <SplideSlide>
             <button
-              className={`service-butn-md butn-bord radius-30 ${
+              className={`service-btn-clr service-butn-md butn-bord radius-30 ${
                 activeButton === 3 ? "active" : ""
               }`}
               onClick={() => handleButtonClick(3)}
@@ -205,7 +205,7 @@ const ServiceMain = () => {
 
           <SplideSlide>
             <button
-              className={`service-butn-md butn-bord radius-30 ${
+              className={`service-btn-clr service-butn-md butn-bord radius-30 ${
                 activeButton === 4 ? "active" : ""
               }`}
               onClick={() => handleButtonClick(4)}
@@ -216,7 +216,7 @@ const ServiceMain = () => {
 
           <SplideSlide>
             <button
-              className={`service-butn-md butn-bord radius-30 ${
+              className={`service-btn-clr service-butn-md butn-bord radius-30 ${
                 activeButton === 5 ? "active" : ""
               }`}
               onClick={() => handleButtonClick(5)}

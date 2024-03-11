@@ -5,7 +5,7 @@ import Head from "next/head";
 import Layout from "@/layouts/default";
 //= Components
 import Loader from "@/components/Common/Loader";
-import ProductShop1 from "@/components/InnerPages/Shop/productShop1";
+import ProductShop2 from "@/components/InnerPages/Shop/productShop2";
 import LightFooter from "../light-footer";
 import LightNavbar from "../light-navbar";
 
@@ -30,7 +30,7 @@ function PageProductShop1() {
       <Loader />
       <LightNavbar></LightNavbar>
       <main>
-        <ProductShop1></ProductShop1>
+        <ProductShop2></ProductShop2>
       </main>
       <LightFooter />
     </>

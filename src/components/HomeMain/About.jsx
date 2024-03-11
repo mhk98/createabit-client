@@ -2,7 +2,11 @@ import Image from "next/image";
 import Link from "next/link";
 import about from "../../../images/about/01.jpg";
 import about1 from "../../../images/about/1.jpg";
+import data from "@/data/HomeMain/about1.json";
+import data1 from "@/data/HomeMain/about2.json";
 function About({ lightMode }) {
+  console.log(data);
+  console.log(data1);
   return (
     <>
       <section className="about-intro section-about">
@@ -109,9 +113,11 @@ function About({ lightMode }) {
                     <div>
                       <div className="icon-img-50">
                         <img
-                          src={`/${
-                            lightMode ? "light" : "dark"
-                          }/assets/imgs/serv-icons/0.png`}
+                          // src={`/${
+                          //   lightMode ? "light" : "dark"
+                          // }/assets/imgs/serv-icons/0.png`}
+
+                          src="/dark/assets/imgs/serv-icons/0.jpg"
                           alt=""
                         />
                       </div>
@@ -131,9 +137,11 @@ function About({ lightMode }) {
                     <div>
                       <div className="icon-img-50">
                         <img
-                          src={`/${
-                            lightMode ? "light" : "dark"
-                          }/assets/imgs/serv-icons/1.png`}
+                          // src={`/${
+                          //   lightMode ? "light" : "dark"
+                          // }/assets/imgs/serv-icons/1.png`}
+
+                          src="/dark/assets/imgs/serv-icons/1.jpg"
                           alt=""
                         />
                       </div>

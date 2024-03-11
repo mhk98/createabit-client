@@ -337,7 +337,8 @@ function Service3() {
                 <div className="flex">
                   <FontAwesomeIcon
                     icon={faCheck}
-                    style={{ fontSize: "18px", fontWeight: "600" }}
+                    className="mobile-icon"
+                    // style={{ fontSize: "18px", fontWeight: "600" }}
                   />
                   <h5 style={{ fontSize: "18px" }} className="ml-10">
                     Mobile App Development
@@ -346,7 +347,8 @@ function Service3() {
                 <div className="flex">
                   <FontAwesomeIcon
                     icon={faCheck}
-                    style={{ fontSize: "18px", fontWeight: "600" }}
+                    // style={{ fontSize: "18px", fontWeight: "600" }}
+                    className="mobile-icon"
                   />
                   <h5 style={{ fontSize: "18px" }} className="ml-10">
                     Mobile App Design
@@ -355,7 +357,8 @@ function Service3() {
                 <div className="flex">
                   <FontAwesomeIcon
                     icon={faCheck}
-                    style={{ fontSize: "18px", fontWeight: "600" }}
+                    // style={{ fontSize: "18px", fontWeight: "600" }}
+                    className="mobile-icon"
                   />
                   <h5 style={{ fontSize: "18px" }} className="ml-10">
                     Smartphone App Development
@@ -364,7 +367,8 @@ function Service3() {
                 <div className="flex">
                   <FontAwesomeIcon
                     icon={faCheck}
-                    style={{ fontSize: "18px", fontWeight: "600" }}
+                    // style={{ fontSize: "18px", fontWeight: "600" }}
+                    className="mobile-icon"
                   />
                   <h5 style={{ fontSize: "18px" }} className="ml-10">
                     Tablet App Development
@@ -373,7 +377,8 @@ function Service3() {
                 <div className="flex">
                   <FontAwesomeIcon
                     icon={faCheck}
-                    style={{ fontSize: "18px", fontWeight: "600" }}
+                    // style={{ fontSize: "18px", fontWeight: "600" }}
+                    className="mobile-icon"
                   />
                   <h5 style={{ fontSize: "18px" }} className="ml-10">
                     HTML5 Mobile Development
@@ -382,7 +387,8 @@ function Service3() {
                 <div className="flex">
                   <FontAwesomeIcon
                     icon={faCheck}
-                    style={{ fontSize: "18px", fontWeight: "600" }}
+                    // style={{ fontSize: "18px", fontWeight: "600" }}
+                    className="mobile-icon"
                   />
                   <h5 style={{ fontSize: "18px" }} className="ml-10">
                     iOS App Development
@@ -391,7 +397,8 @@ function Service3() {
                 <div className="flex">
                   <FontAwesomeIcon
                     icon={faCheck}
-                    style={{ fontSize: "18px", fontWeight: "600" }}
+                    // style={{ fontSize: "18px", fontWeight: "600" }}
+                    className="mobile-icon"
                   />
                   <h5 style={{ fontSize: "18px" }} className="ml-10">
                     Android App Development
@@ -400,7 +407,8 @@ function Service3() {
                 <div className="flex">
                   <FontAwesomeIcon
                     icon={faCheck}
-                    style={{ fontSize: "18px", fontWeight: "600" }}
+                    // style={{ fontSize: "18px", fontWeight: "600" }}
+                    className="mobile-icon"
                   />
                   <h5 style={{ fontSize: "18px" }} className="ml-10">
                     BlackBerry App Development
@@ -409,7 +417,8 @@ function Service3() {
                 <div className="flex">
                   <FontAwesomeIcon
                     icon={faCheck}
-                    style={{ fontSize: "18px", fontWeight: "600" }}
+                    // style={{ fontSize: "18px", fontWeight: "600" }}
+                    className="mobile-icon"
                   />
                   <h5 style={{ fontSize: "18px" }} className="ml-10">
                     Windows App Development
@@ -418,7 +427,8 @@ function Service3() {
                 <div className="flex">
                   <FontAwesomeIcon
                     icon={faCheck}
-                    style={{ fontSize: "18px", fontWeight: "600" }}
+                    // style={{ fontSize: "18px", fontWeight: "600" }}
+                    className="mobile-icon"
                   />
                   <h5 style={{ fontSize: "18px" }} className="ml-10">
                     Cross-platform Development
@@ -669,7 +679,6 @@ function Service3() {
                     </small>
                   </div>
                 </div>
-                
               </div>
             </div>
           </div>

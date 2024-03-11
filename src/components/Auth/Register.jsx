@@ -24,8 +24,8 @@ const Register = () => {
 
     try {
       const response = await axios.post(
-        "https://createabit-server-uao6.onrender.com/api/v1/user/register",
-        // "https://createabit-server-uao6.onrender.com/api/v1/user/register",
+        "https://createabit-backend.onrender.com/api/v1/user/register",
+        // "https://createabit-backend.onrender.com/api/v1/user/register",
 
         formData
       );
@@ -49,7 +49,7 @@ const Register = () => {
       <h3>Register</h3>
       <form onSubmit={handleSubmit} className="register-form">
         <div className="form-group">
-          <label htmlFor="username">Username</label>
+          <label htmlFor="username">Name</label>
           <input
             className="form-input"
             type="text"

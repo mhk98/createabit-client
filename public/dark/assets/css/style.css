@@ -3117,6 +3117,35 @@ body.loaded {
   transform: translateY(80px);
 }
 
+.development-icon {
+  font-size: 30px;
+}
+
+.application-icon {
+  font-size: 10px;
+  background-color: white;
+  color: black;
+  width: 30px;
+  height: 30px;
+  padding: 20px;
+}
+
+.mobile-icon {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.digital-icon {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: white;
+  color: black;
+  padding: 20px;
+  display: block;
+  margin: auto;
+}
+
 .navbar .icon-bar {
   color: #fff;
 }
@@ -3131,6 +3160,21 @@ body.loaded {
   margin: 0 15px;
 }
 
+.productshop_video {
+  text-align: center;
+}
+
+.faq-header {
+  padding: 1.2em 1em;
+
+  font-weight: 600;
+
+  background-color: whitesmoke;
+  color: black;
+
+  user-select: none;
+  cursor: pointer;
+}
 .navbar .navbar-nav .nav-link .rolling-text {
   height: 30px;
   line-height: 30px;
@@ -5750,6 +5794,10 @@ footer .bg-pattern {
 
 /* Pages Header
 -----------------------------------------------------------------*/
+
+.header-cont {
+  margin-top: 100px;
+}
 .page-header {
   min-height: 60vh;
   position: relative;
@@ -9033,6 +9081,10 @@ header.in-box {
   opacity: 0.3;
 }
 
+.cart-color {
+  color: white;
+}
+
 .main-shop .shop-products .item .img:after {
   content: "";
   position: absolute;
@@ -9047,6 +9099,11 @@ header.in-box {
   transition: all 0.4s;
 }
 
+.service-btn-clr {
+  background-color: black;
+  color: white;
+  border: 2px solid white;
+}
 .main-shop .shop-products .item .img .add-cart {
   position: absolute;
   bottom: 40px;
@@ -9892,6 +9949,12 @@ header.in-box {
     display: none;
   }
 
+  .faq2 {
+    width: 100%;
+    height: 500px;
+    margin-top: 150px;
+  }
+
   .hamenu .menu-links {
     color: #fff;
     margin-top: -60px;
@@ -9904,6 +9967,10 @@ header.in-box {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+  }
+
+  .service-slider1 .service-butn-md {
+    width: 400px;
   }
 
   .sm-mb10 {
@@ -10644,7 +10711,7 @@ header.in-box {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 20px;
-    margin-top: 100px;
+    /* margin-top: 50px; */
     margin-bottom: 120px;
     padding-left: 50px;
     padding-right: 50px;
@@ -10684,7 +10751,15 @@ header.in-box {
     grid-template-columns: repeat(1, 1fr);
     grid-gap: 20px;
   }
+  .intelligenttech1 {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 50px;
+  }
 
+  .purchase {
+    margin-bottom: 100px;
+  }
   .slider .parallax-slider .swiper-slide {
     position: relative;
     overflow: hidden;
@@ -10766,7 +10841,7 @@ header.in-box {
     height: 600px;
   }
   .faq2 {
-    width: 500px;
+    width: 400px;
     height: 600px;
   }
 
@@ -10781,6 +10856,10 @@ header.in-box {
     grid-gap: 20px;
   }
 
+  .faq2 {
+    width: 400px !important;
+    height: 600px;
+  }
   .laser {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -11029,4 +11108,46 @@ label {
   .header-content {
     margin-left: 0px;
   }
+}
+
+.productshop_banner {
+  background-image: url("../../assets/imgs/background/14.jpg");
+  width: 100%;
+  height: 500px;
+  text-align: center;
+  align-items: center;
+  position: relative;
+  margin: 100px 0px;
+}
+
+.productshop_banner_cont {
+  position: absolute;
+  top: 150px;
+}
+
+.int-img {
+  width: 200px !important;
+  height: 200px;
+}
+
+.intelligenttech1 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.business_gift {
+  background-image: url("../../assets//imgs/sass-img/work/1.jpg");
+  width: 100%;
+  height: 500px;
+  text-align: center;
+  align-items: center;
+  display: block;
+  margin-bottom: 180px;
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover;
+}
+
+.wow-btn {
+  color: black;
 }

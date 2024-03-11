@@ -8,23 +8,26 @@ export default function IntelligentTech1() {
       <h4
         style={{
           textAlign: "center",
-          paddingTop: "60px",
-          paddingBottom: "60px",
+          margin: "160px 0px",
         }}
       >
         INAIL™ Intelligent nail painting equipment
       </h4>
       <div className="intelligenttech1">
-        <Image
-          style={{ width: "200px", height: "200px" }}
-          src={banner1}
-          alt=""
-        />
-        <Image
-          style={{ width: "200px", height: "200px" }}
-          src={banner2}
-          alt=""
-        />
+        <div>
+          <Image
+            style={{ width: "200px", height: "200px" }}
+            src={banner1}
+            alt=""
+          />
+        </div>
+        <div>
+          <Image
+            style={{ width: "200px", height: "200px" }}
+            src={banner2}
+            alt=""
+          />
+        </div>
       </div>
     </div>
   );

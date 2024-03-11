@@ -121,7 +121,7 @@ function LightNavbar({ lightMode, alwaysDark, darkOnScroll }) {
                   </Link>
                 </div>
 
-                {cart.length > 0 && (
+                {cart.length && userLoggedIn > 0 && (
                   <div className="addtocart">
                     <Link href="/light/shop-cart" className="icon ml-30">
                       <svg

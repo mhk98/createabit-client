@@ -1,6 +1,5 @@
 import Intro from "@/components/MarketingAgency/Intro";
 import {
-  faBuildingUser,
   faMobileButton,
   faUserGraduate,
 } from "@fortawesome/free-solid-svg-icons";
@@ -62,7 +61,7 @@ function Service2() {
               <div style={{ display: "flex", gap: "10px" }}>
                 <FontAwesomeIcon
                   icon={faMobileButton}
-                  style={{ fontSize: "30px" }}
+                  className="development-icon"
                 />
                 <h5>Mutiple Devices</h5>
               </div>
@@ -77,7 +76,7 @@ function Service2() {
               <div style={{ display: "flex", gap: "10px" }}>
                 <FontAwesomeIcon
                   icon={faMobileButton}
-                  style={{ fontSize: "30px" }}
+                  className="development-icon"
                 />
                 <h5>Multiple Computers</h5>
               </div>
@@ -100,7 +99,7 @@ function Service2() {
               <div style={{ display: "flex", gap: "10px" }}>
                 <FontAwesomeIcon
                   icon={faMobileButton}
-                  style={{ fontSize: "30px" }}
+                  className="development-icon"
                 />
                 <h5>Easy Data Sharing</h5>
               </div>
@@ -116,7 +115,7 @@ function Service2() {
               <div style={{ display: "flex", gap: "10px" }}>
                 <FontAwesomeIcon
                   icon={faMobileButton}
-                  style={{ fontSize: "30px" }}
+                  className="development-icon"
                 />
                 <h5>No Backup Needed</h5>
               </div>
@@ -151,18 +150,10 @@ function Service2() {
                 }}
               >
                 <div className="left-side">
-                <div className="user-icon">
+                  <div className="user-icon">
                     <FontAwesomeIcon
-                      className="rounded-circle"
+                      className="rounded-circle application-icon"
                       icon={faUserGraduate}
-                      style={{
-                        fontSize: "10px",
-                        backgroundColor: "white",
-                        color: "black",
-                        width: "30px",
-                        height: "30px",
-                        padding: "20px",
-                      }}
                     ></FontAwesomeIcon>
                   </div>
                 </div>
@@ -189,18 +180,10 @@ function Service2() {
                 }}
               >
                 <div className="left-side">
-                <div className="user-icon">
+                  <div className="user-icon">
                     <FontAwesomeIcon
-                      className="rounded-circle"
+                      className="rounded-circle application-icon"
                       icon={faUserGraduate}
-                      style={{
-                        fontSize: "10px",
-                        backgroundColor: "white",
-                        color: "black",
-                        width: "30px",
-                        height: "30px",
-                        padding: "20px",
-                      }}
                     ></FontAwesomeIcon>
                   </div>
                 </div>
@@ -227,18 +210,10 @@ function Service2() {
                 }}
               >
                 <div className="left-side">
-                <div className="user-icon">
+                  <div className="user-icon">
                     <FontAwesomeIcon
-                      className="rounded-circle"
+                      className="rounded-circle application-icon"
                       icon={faUserGraduate}
-                      style={{
-                        fontSize: "10px",
-                        backgroundColor: "white",
-                        color: "black",
-                        width: "30px",
-                        height: "30px",
-                        padding: "20px",
-                      }}
                     ></FontAwesomeIcon>
                   </div>
                 </div>
@@ -270,18 +245,10 @@ function Service2() {
                 }}
               >
                 <div className="left-side">
-                <div className="user-icon">
+                  <div className="user-icon">
                     <FontAwesomeIcon
-                      className="rounded-circle"
+                      className="rounded-circle application-icon"
                       icon={faUserGraduate}
-                      style={{
-                        fontSize: "10px",
-                        backgroundColor: "white",
-                        color: "black",
-                        width: "30px",
-                        height: "30px",
-                        padding: "20px",
-                      }}
                     ></FontAwesomeIcon>
                   </div>
                 </div>
@@ -308,18 +275,10 @@ function Service2() {
                 }}
               >
                 <div className="left-side">
-                <div className="user-icon">
+                  <div className="user-icon">
                     <FontAwesomeIcon
-                      className="rounded-circle"
+                      className="rounded-circle application-icon"
                       icon={faUserGraduate}
-                      style={{
-                        fontSize: "10px",
-                        backgroundColor: "white",
-                        color: "black",
-                        width: "30px",
-                        height: "30px",
-                        padding: "20px",
-                      }}
                     ></FontAwesomeIcon>
                   </div>
                 </div>
@@ -347,16 +306,8 @@ function Service2() {
                 <div className="left-side">
                   <div className="user-icon">
                     <FontAwesomeIcon
-                      className="rounded-circle"
+                      className="rounded-circle application-icon"
                       icon={faUserGraduate}
-                      style={{
-                        fontSize: "10px",
-                        backgroundColor: "white",
-                        color: "black",
-                        width: "30px",
-                        height: "30px",
-                        padding: "20px",
-                      }}
                     ></FontAwesomeIcon>
                   </div>
                 </div>

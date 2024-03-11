@@ -37,6 +37,6 @@ function PageProductShop1() {
   );
 }
 
-PageProductShop1.getLayout = (page) => <Layout>{page}</Layout>;
+PageProductShop1.getLayout = (page) => <Layout lightMode>{page}</Layout>;
 
 export default PageProductShop1;

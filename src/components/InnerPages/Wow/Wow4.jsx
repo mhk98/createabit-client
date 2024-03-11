@@ -177,7 +177,7 @@ export default function Wow4() {
                   <div className="img">
                     <Image src={app2} alt="" className="radius-10" />
                     <Link href="/dark/project-details1" className="tag">
-                      <p>Wow Product</p>
+                      <p className="wow-btn">Wow Product</p>
                     </Link>
                   </div>
                   <div className="cont mt-30 d-flex">
@@ -199,7 +199,7 @@ export default function Wow4() {
                   <div className="img">
                     <Image src={app4} alt="" className="radius-10" />
                     <Link href="/dark/project-details1" className="tag">
-                      <p>Wow Product</p>
+                      <p className="wow-btn">Wow Product</p>
                     </Link>
                   </div>
                   <div className="cont mt-30 d-flex">

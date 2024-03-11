@@ -130,7 +130,7 @@ function DarkNavbar({ lightMode, alwaysDark, darkOnScroll }) {
                   </Link>
                 </div>
 
-                {cart.length > 0 && (
+                {cart.length && userLoggedIn > 0 && (
                   <div className="addtocart">
                     <Link href="/dark/shop-cart" className="icon ml-30">
                       <svg

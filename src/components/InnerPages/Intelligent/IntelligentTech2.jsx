@@ -73,15 +73,15 @@ export default function IntelligentTech2() {
 
         <div className="intelligenttech-package">
           <div className="intelligenttech-icon">
-            <FontAwesomeIcon icon={faArrowRight} />
+            <FontAwesomeIcon className="int-icon" icon={faArrowRight} />
             <h5>Safe</h5>
           </div>
           <div className="intelligenttech-icon">
-            <FontAwesomeIcon icon={faArrowRight} />
+            <FontAwesomeIcon className="int-icon" icon={faArrowRight} />
             <h5>Smart</h5>
           </div>
           <div className="intelligenttech-icon">
-            <FontAwesomeIcon icon={faArrowRight} />
+            <FontAwesomeIcon className="int-icon" icon={faArrowRight} />
             <h5>Clean</h5>
           </div>
         </div>

@@ -8,10 +8,9 @@ import Loader from "@/components/Common/Loader";
 import Header from "@/components/InnerPages/Header";
 import Layout from "@/layouts/default";
 
-
-import Service6 from "@/components/InnerPages/ServiceDetails/Service6";
-import LightNavbar from "../light-navbar";
+import ServiceMain from "@/components/InnerPages/ServiceDetails/ServiceMain";
 import LightFooter from "../light-footer";
+import LightNavbar from "../light-navbar";
 
 function PageService6() {
   useEffect(() => {
@@ -34,7 +33,7 @@ function PageService6() {
       <LightNavbar></LightNavbar>
       <main>
         <Header data={headerMetadata} subBg={true} />
-        <Service6></Service6>
+        <ServiceMain></ServiceMain>
       </main>
       <LightFooter />
     </>

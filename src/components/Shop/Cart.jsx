@@ -179,7 +179,7 @@ function Cart({ lightMode }) {
                             <div className="img icon-img-80">
                               {/* <Image src={item.image} alt={item.title} /> */}
                               <Image
-                                src={`https://createabit-server-uao6.onrender.com/${item.Image}`}
+                                src={`https://createabit-backend.onrender.com/${item.Image}`}
                                 alt=""
                                 width={70}
                                 height={50}

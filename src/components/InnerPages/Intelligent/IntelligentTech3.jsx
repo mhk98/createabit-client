@@ -8,9 +8,11 @@ export default function IntelligentTech3() {
       className="container"
       style={{ marginBottom: "150px", marginTop: "150px" }}
     >
-      <div className="laser">
-        <Image src={laser} alt="" width={300} height={250} />
-        <div>
+      <div className="row gap-5 mb-50">
+        <div className="col-lg-5">
+          <Image src={laser} alt="" width={300} height={250} />
+        </div>
+        <div className="col-lg-5">
           <h3>Fiber laser marking machine</h3>
           <p>
             Fiber laser marking machine with so high technology and the main
@@ -22,8 +24,8 @@ export default function IntelligentTech3() {
         </div>
       </div>
 
-      <div className="intelligent-laser">
-        <div>
+      <div className="row gap-5">
+        <div className="col-lg-3">
           <Image src={fiber} alt="" />
           <h6 style={{ color: "#ff9801", marginTop: "30px" }}>
             Standard Portable Fiber Marking And Engraving Machine
@@ -38,7 +40,7 @@ export default function IntelligentTech3() {
             </a>
           </div>
         </div>
-        <div>
+        <div className="col-lg-3">
           <Image src={fiber} alt="" />
           <h6 style={{ color: "#ff9801", marginTop: "30px" }}>
             Standard Portable Fiber Marking And Engraving Machine
@@ -52,7 +54,7 @@ export default function IntelligentTech3() {
             </a>
           </div>
         </div>
-        <div>
+        <div className="col-lg-3">
           <Image src={fiber} alt="" />
           <h6 style={{ color: "#ff9801", marginTop: "30px" }}>
             Standard Portable Fiber Marking And Engraving Machine
@@ -66,7 +68,7 @@ export default function IntelligentTech3() {
             </a>
           </div>
         </div>
-        <div>
+        <div className="col-lg-3">
           <Image src={fiber} alt="" />
           <h6 style={{ color: "#ff9801", marginTop: "30px" }}>
             Standard Portable Fiber Marking And Engraving Machine
@@ -80,7 +82,7 @@ export default function IntelligentTech3() {
             </a>
           </div>
         </div>
-        <div>
+        <div className="col-lg-3">
           <Image src={fiber} alt="" />
           <h6 style={{ color: "#ff9801", marginTop: "30px" }}>
             Standard Portable Fiber Marking And Engraving Machine
@@ -94,7 +96,7 @@ export default function IntelligentTech3() {
             </a>
           </div>
         </div>
-        <div>
+        <div className="col-lg-3">
           <Image src={fiber} alt="" />
           <h6 style={{ color: "#ff9801", marginTop: "30px" }}>
             Standard Portable Fiber Marking And Engraving Machine

@@ -1,15 +1,21 @@
 //= Data
 
-import { useCreateCartMutation } from "@/features/cart/cart";
+import {
+  useCreateCartMutation,
+  useGetAllCartQuery,
+} from "@/features/cart/cart";
 import {
   useGetProductsQuery,
   useSingleCategoryQuery,
 } from "@/features/product/products";
+import axios from "axios";
 import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { useEffect, useState } from "react";
+import { Button, Modal } from "react-bootstrap";
 import toast from "react-hot-toast";
+import { isLoggedIn, storgeUserInfo } from "../services/auth.service";
 
 function Products() {
   const userId =
@@ -78,12 +84,20 @@ function Products() {
 
   // console.log("products", products);
 
+  const { data2, isLoading2, isError2, error2 } = useGetAllCartQuery(userId);
   const [cart, setCart] = useState([]);
 
   useEffect(() => {
-    const savedCart = JSON.parse(localStorage.getItem("cart")) || [];
-    setCart(savedCart);
-  }, []);
+    if (isError2) {
+      // Handle error, you can log it or display an error message.
+      console.error2("Error fetching cart data:", error2);
+    } else if (!isLoading2) {
+      // Only set the cart if there is data and it's not already set to avoid infinite re-renders.
+      if (data2 && data2.data) {
+        setCart(data2.data);
+      }
+    }
+  }, [data2, isLoading2, isError2, error2]);
 
   const [createCart] = useCreateCartMutation();
 
@@ -127,21 +141,64 @@ function Products() {
 
   const userLoggedIn = isLoggedIn();
 
-  const handleAlertCheckout = () => {
-    const confirmed = window.confirm(
-      "Please login first. Do you want to go to the login page?"
-    );
+  // const handleAlertCheckout = () => {
+  //   const confirmed = window.confirm(
+  //     "Please login first. Do you want to go to the login page?"
+  //   );
 
-    if (confirmed) {
-      router.push("/dark/login");
-    }
+  //   if (confirmed) {
+  //     router.push("/dark/login");
+  //   }
+  // };
+
+  const [showPopup, setShowPopup] = useState(false);
+
+  const handleAddToCart = () => {
+    // Add your logic here for adding the product to the cart
+    // For demonstration, I'll just show the popup
+    setShowPopup(true);
   };
 
+  const [formData, setFormData] = useState({
+    Email: "",
+    Password: "",
+  });
+
+  const handleChange = (e) => {
+    setFormData({
+      ...formData,
+      [e.target.name]: e.target.value,
+    });
+  };
+
+  console.log("formData", formData);
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    try {
+      const response = await axios.post(
+        "https://createabit-backend.onrender.com/api/v1/user/login",
+        // "https://createabit-backend.onrender.com/api/v1/user/login",
+        formData
+      );
+
+      if (response.data.data.accessToken) {
+        toast.success("Successfully Logged In");
+        localStorage.setItem("userId", response.data.data.user.User_ID);
+        router.push("/");
+      }
+      storgeUserInfo({ accessToken: response.data.data.accessToken });
+    } catch (error) {
+      console.error("Error:", error);
+      // Handle the error, e.g., show an error message to the user.
+    }
+  };
   return (
     <div className="row">
       <div className="col-lg-3">
         <div className="sidebar md-mb80">
-          <div className="item search mb-40">
+          <div className="mb-40 item search">
             <form action="contact.php">
               <div className="form-group">
                 <input type="text" name="shop_search" placeholder="Search" />
@@ -152,7 +209,7 @@ function Products() {
             </form>
           </div>
 
-          <div className="item categories mb-40">
+          <div className="mb-40 item categories">
             <div className="title">
               <h6>Categories</h6>
             </div>
@@ -185,7 +242,7 @@ function Products() {
             </div>
           </div>
 
-          <div className="item price-range mb-40">
+          <div className="mb-40 item price-range">
             <div className="title">
               <h6>Filter by Price</h6>
             </div>
@@ -240,7 +297,7 @@ function Products() {
             </div>
           </div>
 
-          <div className="item best-sale mb-40">
+          <div className="mb-40 item best-sale">
             <div className="title">
               <h6>Best Sellers</h6>
             </div>
@@ -392,7 +449,7 @@ function Products() {
                     <div className="item mb-50">
                       <div className="img">
                         <Image
-                          src={`https://createabit-server-uao6.onrender.com/${item.Image}`}
+                          src={`https://createabit-backend.onrender.com/${item.Image}`}
                           alt=""
                           width={300}
                           height={200}
@@ -400,14 +457,14 @@ function Products() {
                         {userLoggedIn ? (
                           <button
                             onClick={() => addToCart(item, userId)}
-                            className="text-white add-cart"
+                            className="cart-color add-cart"
                           >
                             Add to Cart
                           </button>
                         ) : (
                           <button
-                            onClick={handleAlertCheckout}
-                            className="text-white add-cart"
+                            onClick={handleAddToCart}
+                            className="cart-color add-cart"
                           >
                             Add to Cart
                           </button>
@@ -429,6 +486,61 @@ function Products() {
                         <h5>${item.price}</h5>
                       </div>
                     </div>
+
+                    <Modal show={showPopup} onHide={() => setShowPopup(false)}>
+                      <Modal.Header closeButton>
+                        <Modal.Title className="text-dark">
+                          Welcome! Please Login to continue.
+                        </Modal.Title>
+                      </Modal.Header>
+                      <Modal.Body>
+                        <form onSubmit={handleSubmit} className="register-form">
+                          <div className="form-group">
+                            <label className="text-left " htmlFor="email">
+                              Email
+                            </label>
+                            <input
+                              className="form-input"
+                              type="email"
+                              name="Email"
+                              id="email"
+                              value={formData.email}
+                              onChange={handleChange}
+                              required
+                            />
+                          </div>
+                          <div className="form-group">
+                            <label className="text-left " htmlFor="password">
+                              Password
+                            </label>
+                            <input
+                              className="form-input"
+                              type="password"
+                              name="Password"
+                              id="password"
+                              value={formData.Password}
+                              onChange={handleChange}
+                              required
+                            />
+                          </div>
+                          <button
+                            type="submit"
+                            className="mt-3 butn butn-md butn-bord radius-10"
+                          >
+                            Login
+                          </button>
+                        </form>
+                      </Modal.Body>
+                      <Modal.Footer>
+                        <Button
+                          variant="dark"
+                          onClick={() => setShowPopup(false)}
+                        >
+                          Close
+                        </Button>
+                        {/* Additional buttons can be added here */}
+                      </Modal.Footer>
+                    </Modal>
                   </div>
                 ))}
               </div>
@@ -439,7 +551,7 @@ function Products() {
                     <div className="item mb-50">
                       <div className="img">
                         <Image
-                          src={`https://createabit-server-uao6.onrender.com/${item.Image}`}
+                          src={`https://createabit-backend.onrender.com/${item.Image}`}
                           alt=""
                           width={300}
                           height={200}
@@ -448,14 +560,14 @@ function Products() {
                         {userLoggedIn ? (
                           <button
                             onClick={() => addToCart(item, userId)}
-                            className="text-white add-cart"
+                            className="cart-color add-cart"
                           >
                             Add to Cart
                           </button>
                         ) : (
                           <button
-                            onClick={handleAlertCheckout}
-                            className="text-white add-cart"
+                            onClick={handleAddToCart}
+                            className="cart-color add-cart"
                           >
                             Add to Cart
                           </button>
@@ -477,6 +589,149 @@ function Products() {
                         <h5>${item.price}</h5>
                       </div>
                     </div>
+
+                    <Modal
+                      size="lg"
+                      show={showPopup}
+                      onHide={() => setShowPopup(false)}
+                    >
+                      <Modal.Header closeButton>
+                        <Modal.Title className="mx-auto text-dark">
+                          Please Login to continue
+                        </Modal.Title>
+                      </Modal.Header>
+                      <Modal.Body>
+                        <div className="row">
+                          <div className="col-lg-6">
+                            <form
+                              onSubmit={handleSubmit}
+                              className="register-form"
+                            >
+                              <div className="form-group">
+                                <label
+                                  className="text-left text-dark"
+                                  htmlFor="email"
+                                >
+                                  Email
+                                </label>
+                                <input
+                                  className="form-input text-dark"
+                                  type="email"
+                                  name="Email"
+                                  id="email"
+                                  value={formData.email}
+                                  onChange={handleChange}
+                                  required
+                                />
+                              </div>
+                              <div className="form-group">
+                                <label
+                                  className="text-left text-dark"
+                                  htmlFor="password"
+                                >
+                                  Password
+                                </label>
+                                <input
+                                  className="form-input"
+                                  type="password"
+                                  name="Password"
+                                  id="password"
+                                  value={formData.Password}
+                                  onChange={handleChange}
+                                  required
+                                />
+                              </div>
+                              <button
+                                type="submit"
+                                className="mt-3 text-white bg-black butn butn-md butn-bord radius-10"
+                                style={{ width: "300px" }}
+                              >
+                                Login
+                              </button>
+                            </form>
+                            <p className="mt-2 text-center text-black">
+                              <span>Don't have account?</span>
+                              <span>
+                                <Link
+                                  href="/dark/register"
+                                  className="text-primary"
+                                >
+                                  Sign Up
+                                </Link>
+                              </span>
+                            </p>
+                          </div>
+                          <div className="mt-3 col-lg-6">
+                            <button
+                              type="submit"
+                              className="mt-3 text-white align-middle butn butn-md butn-bord radius-10"
+                              style={{
+                                backgroundColor: "#3B5998",
+                                display: "flex",
+                                alignItems: "center",
+                                width: "300px",
+                              }}
+                            >
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 320 512"
+                                height={30}
+                                width={18}
+                                fill="white"
+                              >
+                                <path d="M80 299.3V512H196V299.3h86.5l18-97.8H196V166.9c0-51.7 20.3-71.5 72.7-71.5c16.3 0 29.4 .4 37 1.2V7.9C291.4 4 256.4 0 236.2 0C129.3 0 80 50.5 80 159.4v42.1H14v97.8H80z" />
+                              </svg>
+                              <span
+                                style={{
+                                  fontSize: "25px",
+                                  marginLeft: "10px",
+                                }}
+                              >
+                                Facebook
+                              </span>
+                            </button>
+                            <button
+                              type="submit"
+                              className="mt-3 text-white align-middle butn butn-md butn-bord radius-10"
+                              style={{
+                                backgroundColor: "#D34836",
+                                display: "flex",
+                                alignItems: "center",
+                                width: "300px",
+                              }}
+                            >
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 640 512"
+                                height={30}
+                                width={45}
+                                fill="white"
+                              >
+                                <path d="M386.1 228.5c1.8 9.7 3.1 19.4 3.1 32C389.2 370.2 315.6 448 204.8 448c-106.1 0-192-85.9-192-192s85.9-192 192-192c51.9 0 95.1 18.9 128.6 50.3l-52.1 50c-14.1-13.6-39-29.6-76.5-29.6-65.5 0-118.9 54.2-118.9 121.3 0 67.1 53.4 121.3 118.9 121.3 76 0 104.5-54.7 109-82.8H204.8v-66h181.3zm185.4 6.4V179.2h-56v55.7h-55.7v56h55.7v55.7h56v-55.7H627.2v-56h-55.7z" />
+                              </svg>
+                              <span
+                                style={{
+                                  fontSize: "25px",
+                                  marginLeft: "10px",
+                                }}
+                              >
+                                Google
+                              </span>
+                            </button>
+                          </div>
+                        </div>
+                      </Modal.Body>
+                      <Modal.Footer>
+                        <Button
+                          // variant="dark"
+                          className="text-white bg-black border-0"
+                          onClick={() => setShowPopup(false)}
+                        >
+                          Close
+                        </Button>
+                        {/* Additional buttons can be added here */}
+                      </Modal.Footer>
+                    </Modal>
                   </div>
                 ))}
               </div>

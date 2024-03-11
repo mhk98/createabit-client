@@ -58,7 +58,7 @@ function Service1() {
           <div className="service_card">
             <div style={{ width: "300px" }}>
               <div style={{ display: "flex", gap: "10px" }}>
-                <FontAwesomeIcon icon={faLaptop} style={{ fontSize: "30px" }} />
+                <FontAwesomeIcon className="development-icon" icon={faLaptop} />
                 <h5>Professional Design</h5>
               </div>
               <div>
@@ -72,8 +72,8 @@ function Service1() {
             <div style={{ width: "300px" }}>
               <div style={{ display: "flex", gap: "10px" }}>
                 <FontAwesomeIcon
+                  className="development-icon"
                   icon={faMobileButton}
-                  style={{ fontSize: "30px" }}
                 />
                 <h5>Responsive Website</h5>
               </div>
@@ -87,7 +87,7 @@ function Service1() {
             </div>
             <div style={{ width: "300px" }}>
               <div style={{ display: "flex", gap: "10px" }}>
-                <FontAwesomeIcon icon={faSearch} style={{ fontSize: "30px" }} />
+                <FontAwesomeIcon icon={faSearch} className="development-icon" />
                 <h5>SEO friendly coding</h5>
               </div>
               <div>
@@ -100,7 +100,7 @@ function Service1() {
             </div>
             <div style={{ width: "300px" }}>
               <div style={{ display: "flex", gap: "10px" }}>
-                <FontAwesomeIcon icon={faBlog} style={{ fontSize: "30px" }} />
+                <FontAwesomeIcon icon={faBlog} className="development-icon" />
                 <h5>Multiple Frameworks & CMS</h5>
               </div>
               <div>
@@ -117,7 +117,7 @@ function Service1() {
               <div style={{ display: "flex", gap: "10px" }}>
                 <FontAwesomeIcon
                   icon={faLightbulb}
-                  style={{ fontSize: "30px" }}
+                  className="development-icon"
                 />
                 <h5>Creativity</h5>
               </div>
@@ -131,7 +131,7 @@ function Service1() {
             </div>
             <div style={{ width: "300px" }}>
               <div style={{ display: "flex", gap: "10px" }}>
-                <FontAwesomeIcon icon={faFire} style={{ fontSize: "30px" }} />
+                <FontAwesomeIcon icon={faFire} className="development-icon" />
                 <h5>Passion</h5>
               </div>
               <div>
@@ -144,7 +144,7 @@ function Service1() {
             </div>
             <div style={{ width: "300px" }}>
               <div style={{ display: "flex", gap: "10px" }}>
-                <FontAwesomeIcon icon={faPhone} style={{ fontSize: "30px" }} />
+                <FontAwesomeIcon icon={faPhone} className="development-icon" />
                 <h5>Great Support</h5>
               </div>
               <div>
@@ -157,7 +157,7 @@ function Service1() {
             </div>
             <div style={{ width: "300px" }}>
               <div style={{ display: "flex", gap: "10px" }}>
-                <FontAwesomeIcon icon={faLock} style={{ fontSize: "30px" }} />
+                <FontAwesomeIcon icon={faLock} className="development-icon" />
                 <h5>Security</h5>
               </div>
               <div>
@@ -179,7 +179,7 @@ function Service1() {
                 <Image src={web_banner} alt=""></Image>
               </div>
 
-              <div style={{lineHeight:"10px", marginBottom:"10px"}}>
+              <div style={{ lineHeight: "10px", marginBottom: "10px" }}>
                 <div class="e1617-51 x-text x-text-headline">
                   <div class="x-text-content">
                     <span class="x-graphic" aria-hidden="true">
@@ -264,7 +264,7 @@ function Service1() {
                     </div>
                   </div>
                 </div>
-                
+
                 <div class="e1617-51 x-text x-text-headline">
                   <div class="x-text-content">
                     <span class="x-graphic" aria-hidden="true">

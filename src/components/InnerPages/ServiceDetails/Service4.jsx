@@ -248,17 +248,7 @@ function Service4() {
         <h3 className="mb-40 text-center mt-80">Benefits of our SMM Service</h3>
         <div className="mb-40 row">
           <div className="col-lg-3 service_smm">
-            <FontAwesomeIcon
-              icon={faLightbulb}
-              style={{
-                width: "50px",
-                height: "50px",
-                borderRadius: "50%",
-                backgroundColor: "white",
-                color: "black",
-                padding: "20px",
-              }}
-            />
+            <FontAwesomeIcon icon={faLightbulb} className="digital-icon" />
             <h4>Extended Awareness</h4>
             <p>
               We will implement a social media strategy that will greatly
@@ -267,17 +257,7 @@ function Service4() {
             </p>
           </div>
           <div className="col-lg-3 service_smm">
-            <FontAwesomeIcon
-              icon={faLightbulb}
-              style={{
-                width: "50px",
-                height: "50px",
-                borderRadius: "50%",
-                backgroundColor: "white",
-                color: "black",
-                padding: "20px",
-              }}
-            />
+            <FontAwesomeIcon icon={faLightbulb} className="digital-icon" />
             <h4>Greater Inbound Traffic</h4>
             <p>
               We will implement a social media strategy that will greatly
@@ -294,17 +274,7 @@ function Service4() {
               border: "2px solid #fff",
             }}
           >
-            <FontAwesomeIcon
-              icon={faLightbulb}
-              style={{
-                width: "50px",
-                height: "50px",
-                borderRadius: "50%",
-                backgroundColor: "white",
-                color: "black",
-                padding: "20px",
-              }}
-            />
+            <FontAwesomeIcon icon={faLightbulb} className="digital-icon" />
             <h4>Greater Inbound Traffic</h4>
             <p>
               Without social media, your inbound traffic is limited to your
@@ -321,17 +291,7 @@ function Service4() {
               border: "2px solid #fff",
             }}
           >
-            <FontAwesomeIcon
-              icon={faLightbulb}
-              style={{
-                width: "50px",
-                height: "50px",
-                borderRadius: "50%",
-                backgroundColor: "white",
-                color: "black",
-                padding: "20px",
-              }}
-            />
+            <FontAwesomeIcon icon={faLightbulb} className="digital-icon" />
             <h4>Enhanced Search Engine Rankings</h4>
             <p>
               Social media presence is becoming a significant factor in
@@ -343,17 +303,7 @@ function Service4() {
         </div>
         <div className="mb-40 row">
           <div className="col-lg-3 service_smm">
-            <FontAwesomeIcon
-              icon={faLightbulb}
-              style={{
-                width: "50px",
-                height: "50px",
-                borderRadius: "50%",
-                backgroundColor: "white",
-                color: "black",
-                padding: "20px",
-              }}
-            />
+            <FontAwesomeIcon icon={faLightbulb} className="digital-icon" />
             <h4>Share Content Quickly and Easily</h4>
             <p>
               Social media plays a large part of any content marketing
@@ -363,17 +313,7 @@ function Service4() {
             </p>
           </div>
           <div className="col-lg-3 service_smm">
-            <FontAwesomeIcon
-              icon={faLightbulb}
-              style={{
-                width: "50px",
-                height: "50px",
-                borderRadius: "50%",
-                backgroundColor: "white",
-                color: "black",
-                padding: "20px",
-              }}
-            />
+            <FontAwesomeIcon icon={faLightbulb} className="digital-icon" />
             <h4>Greater Chances for Converting</h4>
             <p>
               Every blog post, image, video, or comment we share for you is a
@@ -390,17 +330,7 @@ function Service4() {
               border: "2px solid #fff",
             }}
           >
-            <FontAwesomeIcon
-              icon={faLightbulb}
-              style={{
-                width: "50px",
-                height: "50px",
-                borderRadius: "50%",
-                backgroundColor: "white",
-                color: "black",
-                padding: "20px",
-              }}
-            />
+            <FontAwesomeIcon icon={faLightbulb} className="digital-icon" />
             <h4>Higher Conversion Rates</h4>
             <p>
               With increased visibility, we make sure your business gains more
@@ -419,14 +349,7 @@ function Service4() {
           >
             <FontAwesomeIcon
               icon={faLightbulb}
-              style={{
-                width: "50px",
-                height: "50px",
-                borderRadius: "50%",
-                backgroundColor: "white",
-                color: "black",
-                padding: "20px",
-              }}
+              className="digital-icon"
             />
             <h4>Increased Brand Authority</h4>
             <p>
@@ -438,17 +361,7 @@ function Service4() {
         </div>
         <div className="row">
           <div className="col-lg-3 service_smm">
-            <FontAwesomeIcon
-              icon={faLightbulb}
-              style={{
-                width: "50px",
-                height: "50px",
-                borderRadius: "50%",
-                backgroundColor: "white",
-                color: "black",
-                padding: "20px",
-              }}
-            />
+            <FontAwesomeIcon icon={faLightbulb} className="digital-icon" />
             <h4>Increased Brand Authority</h4>
             <p>
               We make your customers happy. And, these happy customers mention
@@ -459,14 +372,7 @@ function Service4() {
           <div className="col-lg-3 service_smm">
             <FontAwesomeIcon
               icon={faLightbulb}
-              style={{
-                width: "50px",
-                height: "50px",
-                borderRadius: "50%",
-                backgroundColor: "white",
-                color: "black",
-                padding: "20px",
-              }}
+              className="digital-icon"
             />
             <h4>More Satisfaction of Customers</h4>
             <p>
@@ -486,14 +392,8 @@ function Service4() {
           >
             <FontAwesomeIcon
               icon={faLightbulb}
-              style={{
-                width: "50px",
-                height: "50px",
-                borderRadius: "50%",
-                backgroundColor: "white",
-                color: "black",
-                padding: "20px",
-              }}
+              className="digital-icon"
+
             />
             <h4>Enhanced Brand Loyalty</h4>
             <p>
@@ -513,14 +413,8 @@ function Service4() {
           >
             <FontAwesomeIcon
               icon={faLightbulb}
-              style={{
-                width: "50px",
-                height: "50px",
-                borderRadius: "50%",
-                backgroundColor: "white",
-                color: "black",
-                padding: "20px",
-              }}
+              className="digital-icon"
+
             />
             <h4>Higher Conversion Rates</h4>
             <p>

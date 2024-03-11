@@ -59,7 +59,7 @@ function Story({ lightMode }) {
           style={{ marginTop: "80px" }}
         >
           <div className="container ">
-            <div className="mx-auto row">
+            <div className="different-cont row">
               <div className="col-lg-6 rest">
                 <div className="imgs md-mb50">
                   <div className="img1">
@@ -73,11 +73,11 @@ function Story({ lightMode }) {
               </div>
               <div className="mt-30 col-lg-6">
                 <div className="cont">
-                  <h2 className=" wow">
+                  <h2 className="wow">
                     <span className="">Our Key Differentiators</span>
                   </h2>
                   <div className="mt-30 feat">
-                    <ul className="">
+                    <ul className="differentiator">
                       <li className="mb-10 " style={{ fontSize: "16px" }}>
                         Expertise in executing customized project requirements
                         to perfection (short-term as well as long-term)
@@ -113,7 +113,7 @@ function Story({ lightMode }) {
             </div>
           </div>
         </section>
-        <div className="row" style={{ marginTop: "-40px" }}>
+        <div className="row" style={{ marginTop: "20px" }}>
           <div className="col-lg-8">
             <div className="cont">
               <p style={{ fontSize: "16px" }}>

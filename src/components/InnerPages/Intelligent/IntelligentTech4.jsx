@@ -10,8 +10,8 @@ import product2 from "../../../../images/high speed gate.jpg";
 export default function IntelligentTech4() {
   return (
     <div className="container">
-      <div className="cart_parking">
-        <div>
+      <div className="row gap-50 mb-3" style={{ margin: "120px 0px" }}>
+        <div className="col-lg-6">
           <h5>Tripod Turnstile</h5>
           <p>
             Our web application development department is equipped with the
@@ -27,7 +27,7 @@ export default function IntelligentTech4() {
             </a>
           </div>
         </div>
-        <div>
+        <div className="col-lg-6">
           <Image className="cart_parking_image" src={product1} alt="" />
         </div>
       </div>
