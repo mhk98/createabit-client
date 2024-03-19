@@ -214,7 +214,7 @@ h6 {
 
 p {
   line-height: 1.8;
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 300;
   color: #ddd;
   margin: 0;
@@ -8086,7 +8086,8 @@ header.in-box {
 .crev-header {
   min-height: 100%;
   position: relative;
-  margin-top: -150px !important;
+  margin-top: -240px;
+  margin-bottom: 60px;
 }
 
 .crev-header .caption h1 {
@@ -8100,7 +8101,6 @@ header.in-box {
   height: 100%;
   width: 60%;
   margin-left: 40%;
-  margin-top: -160px;
 }
 
 .crev-header .main-img img {

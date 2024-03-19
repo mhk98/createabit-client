@@ -4,7 +4,7 @@ import { useRouter } from "next/navigation";
 import { useState } from "react";
 import toast from "react-hot-toast";
 
-const Register = () => {
+const Register = ({ lightMode }) => {
   const router = useRouter();
   const [formData, setFormData] = useState({
     Name: "",
@@ -31,9 +31,11 @@ const Register = () => {
       );
 
       if (response) {
+        // If the response is truthy, display a success toast message
         toast.success("Successfully Register");
 
-        router.push("/dark/login");
+        // Then, redirect the user to either "/dark/login" or "/light/login" based on the value of lightMode
+        router.push(lightMode ? "/light/login" : "/dark/login");
       }
 
       console.log("RegisterData", response.data);
@@ -90,8 +92,10 @@ const Register = () => {
         <p className="mt-2">
           <span>Alreay have an account?</span>
           <span>
-            <Link href="/dark/login" className="text-primary">
-              {" "}
+            <Link
+              href={lightMode ? "/light/login" : "/dark/login"}
+              className="text-primary"
+            >
               Sign In
             </Link>
           </span>

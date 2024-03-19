@@ -297,7 +297,7 @@ function Products() {
             </div>
           </div>
 
-          <div className="mb-40 item best-sale">
+          {/* <div className="mb-40 item best-sale">
             <div className="title">
               <h6>Best Sellers</h6>
             </div>
@@ -365,9 +365,9 @@ function Products() {
               </div>
               <a href="#0" className="over-link"></a>
             </div>
-          </div>
+          </div> */}
 
-          <div className="item tags">
+          {/* <div className="item tags">
             <div className="title">
               <h6>Popular Tags</h6>
             </div>
@@ -381,7 +381,7 @@ function Products() {
               <a href="#0">Mobile</a>
               <a href="#0">ThemesCamp</a>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
 

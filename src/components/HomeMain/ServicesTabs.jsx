@@ -17,102 +17,78 @@ function ServicesTabs({ lightMode }) {
   }
 
   return (
-    <section className="pt-0 services-tab revers section-padding servicestabs">
+    <section className="services-tab revers section-padding pt-0">
       <div className="container">
-        {/* <div className="row mb-80"> */}
-        <div className="col-lg-12">
-          <div className="full-width">
-            <div className="pt-40 pb-40 main-marq o-hidden bord-thin-top bord-thin-bottom">
-              <div className="slide-har st1">
-                <div className="box">
-                  <div className="item">
-                    <h4 className="d-flex align-items-center fz-70">
-                      <span>Web Application</span>
-                      <span className="fz-50 ml-50 stroke icon">*</span>
-                    </h4>
+        <div className="row mb-80">
+          <div className="col-lg-12">
+            <div className="full-width">
+              <div className="main-marq o-hidden pt-40 pb-40 bord-thin-top bord-thin-bottom">
+                <div className="slide-har st1">
+                  <div className="box">
+                    <div className="item">
+                      <h4 className="d-flex align-items-center fz-70">
+                        <span>Web Application</span>
+                        <span className="fz-50 ml-50 stroke icon">*</span>
+                      </h4>
+                    </div>
+                    <div className="item">
+                      <h4 className="d-flex align-items-center fz-70">
+                        <span>Web Application</span>
+                        <span className="fz-50 ml-50 stroke icon">*</span>
+                      </h4>
+                    </div>
+                    <div className="item">
+                      <h4 className="d-flex align-items-center fz-70">
+                        <span>Website Development</span>
+                        <span className="fz-50 ml-50 stroke icon">*</span>
+                      </h4>
+                    </div>
+                    <div className="item">
+                      <h4 className="d-flex align-items-center fz-70">
+                        <span>Website Development</span>
+                        <span className="fz-50 ml-50 stroke icon">*</span>
+                      </h4>
+                    </div>
+                    <div className="item">
+                      <h4 className="d-flex align-items-center fz-70">
+                        <span>Mobile Apps Development</span>
+                        <span className="fz-50 ml-50 stroke icon">*</span>
+                      </h4>
+                    </div>
                   </div>
-                  <div className="item">
-                    <h4 className="d-flex align-items-center fz-70">
-                      <span>Web Application</span>
-                      <span className="fz-50 ml-50 stroke icon">*</span>
-                    </h4>
-                  </div>
-                  <div className="item">
-                    <h4 className="d-flex align-items-center fz-70">
-                      <span>Website Development</span>
-                      <span className="fz-50 ml-50 stroke icon">*</span>
-                    </h4>
-                  </div>
-                  <div className="item">
-                    <h4 className="d-flex align-items-center fz-70">
-                      <span>Website Development</span>
-                      <span className="fz-50 ml-50 stroke icon">*</span>
-                    </h4>
-                  </div>
-                  <div className="item">
-                    <h4 className="d-flex align-items-center fz-70">
-                      <span>Mobile Application</span>
-                      <span className="fz-50 ml-50 stroke icon">*</span>
-                    </h4>
-                  </div>
-                </div>
-                <div className="box">
-                  <div className="item">
-                    <h4 className="d-flex align-items-center fz-70">
-                      <span>Mobile Application</span>
-                      <span className="fz-50 ml-50 stroke icon">*</span>
-                    </h4>
-                  </div>
-                  <div className="item">
-                    <h4 className="d-flex align-items-center fz-70">
-                      <span>Digital Marketing</span>
-                      <span className="fz-50 ml-50 stroke icon">*</span>
-                    </h4>
-                  </div>
-                  <div className="item">
-                    <h4 className="d-flex align-items-center fz-70">
-                      <span>Digital Marketing</span>
-                      <span className="fz-50 ml-50 stroke icon">*</span>
-                    </h4>
-                  </div>
-                  <div className="item">
-                    <h4 className="d-flex align-items-center fz-70">
-                      <span>Graphic Design</span>
-                      <span className="fz-50 ml-50 stroke icon">*</span>
-                    </h4>
-                  </div>
-                  <div className="item">
-                    <h4 className="d-flex align-items-center fz-70">
-                      <span>Graphic Design</span>
-                      <span className="fz-50 ml-50 stroke icon">*</span>
-                    </h4>
-                  </div>
-                  <div className="item">
-                    <h4 className="d-flex align-items-center fz-70">
-                      <span>Video & Animation</span>
-                      <span className="fz-50 ml-50 stroke icon">*</span>
-                    </h4>
-                  </div>
-                  <div className="item">
-                    <h4 className="d-flex align-items-center fz-70">
-                      <span>Video & Animation</span>
-                      <span className="fz-50 ml-50 stroke icon">*</span>
-                    </h4>
+                  <div className="box">
+                    <div className="item">
+                      <h4 className="d-flex align-items-center fz-70">
+                        <span>Mobile Apps Development</span>
+                        <span className="fz-50 ml-50 stroke icon">*</span>
+                      </h4>
+                    </div>
+                    <div className="item">
+                      <h4 className="d-flex align-items-center fz-70">
+                        <span>Digital Marketing & SEO</span>
+                        <span className="fz-50 ml-50 stroke icon">*</span>
+                      </h4>
+                    </div>
+                    <div className="item">
+                      <h4 className="d-flex align-items-center fz-70">
+                        <span>Digital Marketing & SEO</span>
+                        <span className="fz-50 ml-50 stroke icon">*</span>
+                      </h4>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        {/* </div> */}
-        {/* <div className="row justify-content-center" id="tabs">
+        <div className="row justify-content-center" id="tabs">
           <div className="col-lg-5 valign">
             <div className="serv-tab-link tab-links full-width md-mb50">
               <div className="sec-lg-head mb-80 wow fadeIn">
                 <h6 className="dot-titl-non mb-15">Services</h6>
                 <p>
-                  We help you to go online and increase your conversion rate
-                  Better design for your digital products.{" "}
+                We offer the full spectrum of services to help organizations work better. Everything from creating standards of excellence services for your business
+to work in more effective ways, assessing how you’re doing, and helping you perform even better in future.
                 </p>
               </div>
               <div className="row">
@@ -164,7 +140,7 @@ function ServicesTabs({ lightMode }) {
                     />
                   </div>
                   <div className="cont sub-bg">
-                    <div className="mb-40 icon-img-60">
+                    <div className="icon-img-60 mb-40">
                       <img
                         src={`/${
                           lightMode ? "light" : "dark"
@@ -206,7 +182,7 @@ function ServicesTabs({ lightMode }) {
                     />
                   </div>
                   <div className="cont sub-bg">
-                    <div className="mb-40 icon-img-60">
+                    <div className="icon-img-60 mb-40">
                       <img
                         src={`/${
                           lightMode ? "light" : "dark"
@@ -242,7 +218,7 @@ function ServicesTabs({ lightMode }) {
                     />
                   </div>
                   <div className="cont sub-bg">
-                    <div className="mb-40 icon-img-60">
+                    <div className="icon-img-60 mb-40">
                       <img
                         src={`/${
                           lightMode ? "light" : "dark"
@@ -278,7 +254,7 @@ function ServicesTabs({ lightMode }) {
                     />
                   </div>
                   <div className="cont sub-bg">
-                    <div className="mb-40 icon-img-60">
+                    <div className="icon-img-60 mb-40">
                       <img
                         src={`/${
                           lightMode ? "light" : "dark"
@@ -305,7 +281,7 @@ function ServicesTabs({ lightMode }) {
               </div>
             </div>
           </div>
-        </div> */}
+        </div>
       </div>
     </section>
   );

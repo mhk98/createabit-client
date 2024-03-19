@@ -22,6 +22,8 @@ import DarkNavbar from "../dark-navbar";
 import PortfolioClassicGrid2 from "../portfolio-grid-2";
 import PortfolioClassicGrid3 from "../portfolio-grid-3";
 import Marq from "@/components/HomeMain/Marq";
+import Slider from "@/components/HomeMain/Slider";
+import HomeSoftware from "@/components/HomeMain/HomeSoftware";
 
 function HomeCreativeAgency() {
   useEffect(() => {
@@ -44,6 +46,7 @@ function HomeCreativeAgency() {
           <main className="main-bg">
             <Header />
             <About />
+            <HomeSoftware />
             <Portfolio />
             <PortfolioClassicGrid2 />
             <PortfolioClassicGrid3 />
@@ -53,6 +56,8 @@ function HomeCreativeAgency() {
             <ServicesTabs />
             <Testimonials />
             <HzScroll />
+            <Slider />
+
             {/* <CreativeBlog /> */}
             {/* <WeAre /> */}
             {/* <Wellness /> */}

@@ -125,12 +125,12 @@ function DarkNavbar({ lightMode, alwaysDark, darkOnScroll }) {
             <div id="navi" className={`topnav ${alwaysDark && "navlit"}`}>
               <div className="container">
                 <div className="logo icon-img-120">
-                  <Link href="/dark/home-creative-agency/">
+                  <Link href="/">
                     <img src="/dark/assets/imgs/logo-light.png" alt="" />
                   </Link>
                 </div>
 
-                {cart.length && userLoggedIn > 0 && (
+                {userLoggedIn && cart.length > 0 && (
                   <div className="addtocart">
                     <Link href="/dark/shop-cart" className="icon ml-30">
                       <svg
@@ -167,7 +167,7 @@ function DarkNavbar({ lightMode, alwaysDark, darkOnScroll }) {
                 </div>
                 <div className="ml-50 " style={{ marginTop: "-15px" }}>
                   <Link
-                    href="/light/home-creative-agency/"
+                    href="/light/home/"
                     className="classic butn butn-md butn-bord radius-30"
                   >
                     <span className="word">Classic Mode</span>
@@ -185,7 +185,7 @@ function DarkNavbar({ lightMode, alwaysDark, darkOnScroll }) {
                   onMouseLeave={handleMouseLeave}
                 >
                   <div className="o-hidden">
-                    <Link href="/dark" className="link">
+                    <Link href="/" className="link">
                       <span className="fill-text" data-text="Home">
                         Home
                       </span>
@@ -212,7 +212,7 @@ function DarkNavbar({ lightMode, alwaysDark, darkOnScroll }) {
                 >
                   <div className="o-hidden">
                     <div className="cursor-pointer link dmenu">
-                      <Link href="/dark/page-product/" className="">
+                      <Link href="/dark/product/" className="">
                         <span
                           className="fill-text"
                           data-text="Product Solution"

@@ -26,7 +26,7 @@ function Grid() {
             <div className="col-lg-7">
               <div className="position-re">
                 <h6 className="mb-10 dot-titl-non">Product</h6>
-                <h2 className="fz-50">INTERACTIVE WOW Products</h2>
+                <h2 className="fz-50 ">INTERACTIVE WOW Products</h2>
               </div>
             </div>
             <div className="col-lg-5 d-flex align-items-center">

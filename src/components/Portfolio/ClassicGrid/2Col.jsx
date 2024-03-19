@@ -232,7 +232,16 @@ function Grid() {
           </div>
         </div> */}
         <h6 className="mt-3 dot-titl-non ">Product</h6>
-        <h2 className="fz-50">Dynamic Digital Products</h2>
+        <h2 className="fz-50 my-3">Dynamic Digital Products</h2>
+        <p className="mb-30">
+          Our Wizardly Optical Wonderworking products are designed to have the
+          WOW effect on your customers as soon as they see them. Starting from
+          3D Holographs to interactive floors and touch tables, we offer the
+          most advanced technology solutions that would take your business light
+          years ahead of your competitors. Choose from our wide range of fully
+          customizable devices and let our team tailor solutions specifically
+          for your business
+        </p>
         <div className="gallery">
           <div className="grid row md-marg">
             {data.gallery.map((item) => (

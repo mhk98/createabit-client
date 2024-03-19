@@ -4,13 +4,11 @@ import Head from "next/head";
 //= Layout
 import Layout from "@/layouts/default";
 //= Components
+import Register from "@/components/Auth/Register";
 import Loader from "@/components/Common/Loader";
-import Footer from "@/components/HomeMain/Footer";
-import Header from "@/components/Shop/Header";
-import List from "@/components/Shop/List";
-import DarkNavbar from "../dark-navbar";
+import LightNavbar from "../light-navbar";
 
-function ShopList() {
+function UserRegistration(lightMode) {
   useEffect(() => {
     document.body.classList.add("main-bg");
     // Smooth Scroll of Page
@@ -25,31 +23,29 @@ function ShopList() {
   }, []);
 
   const metadata = {
-    subTitle: "SHOPPING",
-    title: "Shop.",
+    subTitle: "Registration",
+    title: "User Registration",
   };
 
   return (
     <>
       <Head>
-        <title>Createabit - Shop List</title>
+        <title>Createabit - User Register</title>
       </Head>
 
       <Loader />
       <div id="smooth-wrapper">
-        <DarkNavbar />
+        <LightNavbar />
         <div id="smooth-content">
           <main className="main-bg">
-            <Header data={metadata} />
-            <List />
+            <Register />
           </main>
-          <Footer subBg />
         </div>
       </div>
     </>
   );
 }
 
-ShopList.getLayout = (page) => <Layout>{page}</Layout>;
+UserRegistration.getLayout = (page) => <Layout lightMode>{page}</Layout>;
 
-export default ShopList;
+export default UserRegistration;

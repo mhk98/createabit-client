@@ -189,7 +189,9 @@ function Product({ lightMode }) {
 
                     <Link
                       // href="/dark/page-productshop1"
-                      href={`/${lightMode ? "light" : "dark"}/shop-list`}
+                      href={`/${
+                        lightMode ? "light" : "dark"
+                      }/page-productshop1`}
                       className="mt-4 butn butn-md butn-bord radius-30"
                     >
                       <div className="full-width">
@@ -229,7 +231,7 @@ function Product({ lightMode }) {
 
                   // key={index}
                 >
-                  <Image src={banner2} alt="" />
+                  <Image src={banner1} alt="" />
                 </div>
               </div>
             </div>
@@ -241,7 +243,7 @@ function Product({ lightMode }) {
                 // key={index}
               >
                 <div className="img-hiden">
-                  <Image src={banner2} alt="" />
+                  <Image src={banner1} alt="" />
                 </div>
                 {/* <span className="sub-title mb-15">
                   {item.number} {item.type}
@@ -322,7 +324,9 @@ function Product({ lightMode }) {
                         </h6>
                       </li>
                     </ul>
+
                     <Link
+                      // href="/dark/page-productshop1"
                       href={`/${
                         lightMode ? "light" : "dark"
                       }/page-productshop2`}
@@ -332,6 +336,18 @@ function Product({ lightMode }) {
                         <span className="full-width">View Details</span>
                       </div>
                     </Link>
+
+                    {/* <Link
+                      style={{ marginLeft: "20px" }}
+                      href={`/${
+                        lightMode ? "light" : "dark"
+                      }/page-productshop1`}
+                      className="mt-4 butn butn-md butn-bord radius-30"
+                    >
+                      <div className="full-width">
+                        <span className="full-width">Add to Cart</span>
+                      </div>
+                    </Link> */}
                   </div>
                 </div>
               </div>
@@ -353,7 +369,7 @@ function Product({ lightMode }) {
 
                   // key={index}
                 >
-                  <Image src={banner3} alt="" />
+                  <Image src={banner1} alt="" />
                 </div>
               </div>
             </div>
@@ -365,7 +381,7 @@ function Product({ lightMode }) {
                 // key={index}
               >
                 <div className="img-hiden">
-                  <Image src={banner3} alt="" />
+                  <Image src={banner1} alt="" />
                 </div>
                 {/* <span className="sub-title mb-15">
                   {item.number} {item.type}
@@ -446,17 +462,30 @@ function Product({ lightMode }) {
                         </h6>
                       </li>
                     </ul>
+
                     <Link
+                      // href="/dark/page-productshop1"
                       href={`/${
                         lightMode ? "light" : "dark"
                       }/page-productshop3`}
                       className="mt-4 butn butn-md butn-bord radius-30"
                     >
-                      <span className="full-width">
-                        {/* <Link href="">View Details</Link> */}
-                        View Details
-                      </span>
+                      <div className="full-width">
+                        <span className="full-width">View Details</span>
+                      </div>
                     </Link>
+
+                    {/* <Link
+                      style={{ marginLeft: "20px" }}
+                      href={`/${
+                        lightMode ? "light" : "dark"
+                      }/page-productshop1`}
+                      className="mt-4 butn butn-md butn-bord radius-30"
+                    >
+                      <div className="full-width">
+                        <span className="full-width">Add to Cart</span>
+                      </div>
+                    </Link> */}
                   </div>
                 </div>
               </div>

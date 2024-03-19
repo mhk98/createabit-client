@@ -32,7 +32,12 @@ function Grid() {
         </div> */}
 
         <h6 className="mb-10 dot-titl-non">Product</h6>
-        <h2 className="fz-50">INTERACTIVE WOW Products</h2>
+        <h2 className="fz-50 my-3">INTERACTIVE WOW Products</h2>
+        <p className="mb-30">We offer various kinds of digital services to help organizations with
+          better possibilities to increase the revenue.We are one stop service
+          provider to digitize your business from creating standard to providing
+          excellent service in more effective ways by assessing the steps and
+          even to help businesses to perform in the future</p>
         <div className="gallery">
           <div className="grid row md-marg">
             {data.gallery.map((item) => (

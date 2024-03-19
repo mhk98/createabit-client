@@ -12,7 +12,7 @@ function Services({ lightMode }) {
             <div className="col-lg-8">
               <div className="position-re">
                 <h6 className="dot-titl-non mb-15 wow fadeIn">
-                  Featured Services
+                  Our Amazing Services
                 </h6>
                 <h2 className="d-rotate wow">
                   <span className="rotate-text">Our Services</span>
@@ -22,8 +22,11 @@ function Services({ lightMode }) {
             <div className="col-lg-4 d-flex align-items-center">
               <div className="text wow fadeIn">
                 <p>
-                  Experience excellence through our comprehensive suite of
-                  services.
+                  We offer the full spectrum of services to help organizations
+                  work better. Everything from creating standards of excellence
+                  services for your business to work in more effective ways,
+                  assessing how you’re doing, and helping you perform even
+                  better in future.
                 </p>
               </div>
             </div>

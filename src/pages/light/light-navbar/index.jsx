@@ -158,7 +158,7 @@ function LightNavbar({ lightMode, alwaysDark, darkOnScroll }) {
 
                 <div className="ml-50 ">
                   <Link
-                    href="/dark/home-creative-agency/"
+                    href="/"
                     className="classic butn butn-md butn-bord radius-30"
                     style={{ marginTop: "-5px" }}
                   >
@@ -204,7 +204,7 @@ function LightNavbar({ lightMode, alwaysDark, darkOnScroll }) {
                 >
                   <div className="o-hidden">
                     <div className="cursor-pointer link dmenu">
-                      <Link href="/light/page-product/" className="">
+                      <Link href="/light/product/" className="">
                         <span
                           className="fill-text "
                           data-text="Product Solution"
@@ -329,7 +329,7 @@ function LightNavbar({ lightMode, alwaysDark, darkOnScroll }) {
                   onMouseLeave={handleMouseLeave}
                 >
                   <div className="o-hidden">
-                    <Link href="/dark/home-creative-agency/" className="link">
+                    <Link href="/" className="link">
                       <span
                         className="fill-text classic_btn"
                         data-text="Classic Mode"

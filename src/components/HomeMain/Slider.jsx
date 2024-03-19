@@ -5,7 +5,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 //= Componets
 import Image from "next/image";
 import profile from "../../../images/profile.jpg";
-import testimonial1 from "../../../images/product/digital-product/testimonial3.png";
+import testimonial1 from "../../../images/testimonial1.jpg";
 
 const swiperOptions = {
   modules: [Navigation, Pagination],
@@ -22,7 +22,7 @@ const swiperOptions = {
   },
 };
 
-function Testimonials({ lightMode }) {
+function Slider({ lightMode }) {
   const [loadSwiper, setLoadSwiper] = useState(false);
 
   useEffect(() => {
@@ -40,11 +40,9 @@ function Testimonials({ lightMode }) {
           <div className="col-12">
             <div className="sec-lg-head mb-80">
               <div className="text-center position-re">
-                <h6 className="dot-titl-non mb-15 wow fadeIn">Testimonials</h6>
+                <h6 className="dot-titl-non mb-15 wow fadeIn">Reviews</h6>
                 <h2 className="d-rotate wow">
-                  <span className="rotate-text">
-                    Do You Want Better Visual Design?
-                  </span>
+                  <span className="rotate-text">What People Says?</span>
                 </h2>
               </div>
             </div>
@@ -78,7 +76,7 @@ function Testimonials({ lightMode }) {
                   <SwiperSlide>
                     <div className="item">
                       <div className="mb-40 cont">
-                        {/* <div className="mb-20 rate-stars fz-16">
+                        <div className="mb-20 rate-stars fz-16">
                           <span className="rate main-color4">
                             <i className="fas fa-star"></i>
                             <i className="fas fa-star"></i>
@@ -86,48 +84,7 @@ function Testimonials({ lightMode }) {
                             <i className="fas fa-star"></i>
                             <i className="fas fa-star"></i>
                           </span>
-                        </div> */}
-                        <h5 className="fw-400">
-                          Well, We Are Your Bag Of Secrets! We are a one stop
-                          solutions provider for all your creative marketing
-                          needs, from branding and web marketing to
-                          interior/exterior design and digital video walls. Its
-                          like we are a bag of secrets you can use to beat your
-                          competitor’s visual designs!
-                        </h5>
-                      </div>
-
-                      {/* <div className="d-flex align-items-center">
-                        <div>
-                          <div className="img circle-60">
-                            <Image
-                              src={profile}
-                              alt=""
-                              className="circle-img"
-                            />
-                          </div>
                         </div>
-                        <div className="ml-30">
-                          <div className="info">
-                            <h6 className="fz-16">Leonard Heiser</h6>
-                            <span className="opacity-7 sub-title">Ceo</span>
-                          </div>
-                        </div>
-                      </div> */}
-                    </div>
-                  </SwiperSlide>
-                  <SwiperSlide>
-                    <div className="item">
-                      <div className="mb-40 cont">
-                        {/* <div className="mb-20 rate-stars fz-16">
-                          <span className="rate main-color4">
-                            <i className="fas fa-star"></i>
-                            <i className="fas fa-star"></i>
-                            <i className="fas fa-star"></i>
-                            <i className="fas fa-star"></i>
-                            <i className="fas fa-star"></i>
-                          </span>
-                        </div> */}
                         <h5 className="fw-400">
                           I have been hiring people in this space for a number
                           of years and I have never seen this level of
@@ -135,7 +92,7 @@ function Testimonials({ lightMode }) {
                           with a team that can get the job done.
                         </h5>
                       </div>
-                      {/* <div className="d-flex align-items-center">
+                      <div className="d-flex align-items-center">
                         <div>
                           <div className="img circle-60">
                             <Image
@@ -151,7 +108,45 @@ function Testimonials({ lightMode }) {
                             <span className="opacity-7 sub-title">Ceo</span>
                           </div>
                         </div>
-                      </div> */}
+                      </div>
+                    </div>
+                  </SwiperSlide>
+                  <SwiperSlide>
+                    <div className="item">
+                      <div className="mb-40 cont">
+                        <div className="mb-20 rate-stars fz-16">
+                          <span className="rate main-color4">
+                            <i className="fas fa-star"></i>
+                            <i className="fas fa-star"></i>
+                            <i className="fas fa-star"></i>
+                            <i className="fas fa-star"></i>
+                            <i className="fas fa-star"></i>
+                          </span>
+                        </div>
+                        <h5 className="fw-400">
+                          I have been hiring people in this space for a number
+                          of years and I have never seen this level of
+                          professionalism. It really feels like you are working
+                          with a team that can get the job done.
+                        </h5>
+                      </div>
+                      <div className="d-flex align-items-center">
+                        <div>
+                          <div className="img circle-60">
+                            <Image
+                              src={profile}
+                              alt=""
+                              className="circle-img"
+                            />
+                          </div>
+                        </div>
+                        <div className="ml-30">
+                          <div className="info">
+                            <h6 className="fz-16">Leonard Heiser</h6>
+                            <span className="opacity-7 sub-title">Ceo</span>
+                          </div>
+                        </div>
+                      </div>
                     </div>
                   </SwiperSlide>
                 </Swiper>
@@ -201,4 +196,4 @@ function Testimonials({ lightMode }) {
   );
 }
 
-export default Testimonials;
+export default Slider;

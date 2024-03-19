@@ -5,7 +5,7 @@ import { useState } from "react";
 import toast from "react-hot-toast";
 import { storgeUserInfo } from "../services/auth.service";
 
-const Login = () => {
+const Login = (lightMode) => {
   const router = useRouter();
 
   const [formData, setFormData] = useState({
@@ -83,8 +83,10 @@ const Login = () => {
       <p className="mt-2">
         <span>Don't have account?</span>
         <span>
-          <Link href="/dark/register" className="text-primary">
-            {" "}
+          <Link
+            href={lightMode ? "/light/register" : "/dark/register"}
+            className="text-primary"
+          >
             Sign Up
           </Link>
         </span>

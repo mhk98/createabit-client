@@ -87,7 +87,9 @@ function Products({ lightMode }) {
               </p>
 
               <Link
-                href="/dark/page-service1"
+                href={
+                  lightMode ? "/light/page-service1" : "/dark/page-service1"
+                }
                 className="mt-4 butn butn-md butn-bord radius-30"
               >
                 <span>View Details</span>
@@ -108,7 +110,9 @@ function Products({ lightMode }) {
               </p>
 
               <Link
-                href="/dark/page-service2"
+                href={
+                  lightMode ? "/light/page-service2" : "/dark/page-service2"
+                }
                 className="mt-4 butn butn-md butn-bord radius-30"
               >
                 <span>View Details</span>
@@ -138,7 +142,9 @@ function Products({ lightMode }) {
               </p>
 
               <Link
-                href="/dark/page-service3"
+                href={
+                  lightMode ? "/light/page-service3" : "/dark/page-service3"
+                }
                 className="mt-4 butn butn-md butn-bord radius-30"
               >
                 <span>View Details</span>

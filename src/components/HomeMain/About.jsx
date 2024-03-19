@@ -113,11 +113,10 @@ function About({ lightMode }) {
                     <div>
                       <div className="icon-img-50">
                         <img
-                          // src={`/${
-                          //   lightMode ? "light" : "dark"
-                          // }/assets/imgs/serv-icons/0.png`}
-
-                          src="/dark/assets/imgs/serv-icons/0.jpg"
+                          src={`/${
+                            lightMode ? "light" : "dark"
+                          }/assets/imgs/serv-icons/0.png`}
+                          // src="/dark/assets/imgs/serv-icons/0.png"
                           alt=""
                         />
                       </div>
@@ -137,11 +136,9 @@ function About({ lightMode }) {
                     <div>
                       <div className="icon-img-50">
                         <img
-                          // src={`/${
-                          //   lightMode ? "light" : "dark"
-                          // }/assets/imgs/serv-icons/1.png`}
-
-                          src="/dark/assets/imgs/serv-icons/1.jpg"
+                          src={`/${
+                            lightMode ? "light" : "dark"
+                          }/assets/imgs/serv-icons/1.png`}
                           alt=""
                         />
                       </div>

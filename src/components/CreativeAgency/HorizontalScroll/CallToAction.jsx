@@ -17,8 +17,7 @@ function CallToAction({ lightMode }) {
               <h6 className="mb-10 dot-titl">Call to Action</h6>
               <h2 className="fz-70 fw-700">
                 <span>
-                  We're here to help you bring your exciting project idea from
-                  your dream to fruition.
+                Self Ordering Kisok
                 </span>
                 <br />
                 {/* <span>Let's turn it into reality together.</span> */}

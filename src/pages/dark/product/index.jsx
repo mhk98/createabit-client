@@ -9,10 +9,11 @@ import Menu from "@/components/Showcases/Menu";
 import Navigation from "@/components/Showcases/Navigation";
 import VerticalParallax from "@/components/Showcases/VerticalParallax";
 import Block from "@/components/Showcases/VerticalParallax/Block";
-import Footer from "@/components/Showcases/VerticalParallax/Footer";
 import Numbers from "@/components/Showcases/VerticalParallax/Numbers";
+import DarkFooter from "../dark-footer";
+import DarkNavbar from "../dark-navbar";
 
-function ShowcaseVerticalParallaxLight() {
+function ShowcaseVerticalParallax() {
   useEffect(() => {
     document.body.classList.add("main-bg");
     return () => document.body.classList.remove("main-bg");
@@ -25,20 +26,18 @@ function ShowcaseVerticalParallaxLight() {
       </Head>
 
       <Loader />
-      <Navigation lightMode />
-      <Menu lightMode />
+      {/* <Navigation /> */}
+      <DarkNavbar />
       <main className="main-bg">
         <VerticalParallax />
         <Numbers paddingTop />
         <Block />
       </main>
-      <Footer />
+      <DarkFooter />
     </>
   );
 }
 
-ShowcaseVerticalParallaxLight.getLayout = (page) => (
-  <Layout lightMode>{page}</Layout>
-);
+ShowcaseVerticalParallax.getLayout = (page) => <Layout>{page}</Layout>;
 
-export default ShowcaseVerticalParallaxLight;
+export default ShowcaseVerticalParallax;
