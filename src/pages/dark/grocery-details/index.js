@@ -5,7 +5,6 @@ import Head from "next/head";
 import Layout from "@/layouts/default";
 //= Components
 import Loader from "@/components/Common/Loader";
-import Footer from "@/components/HomeMain/Footer";
 import DarkNavbar from "../dark-navbar";
 import ShowcaseVerticalParallax from "../showcase-parallax";
 import DarkFooter from "../dark-footer";
