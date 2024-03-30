@@ -12,7 +12,7 @@ import Header from "@/components/InnerPages/Header";
 import LightNavbar from "../light-navbar";
 import LightFooter from "../light-footer";
 
-function PageProductsCategory1() {
+function PageProductsCategory1(lightMode) {
   useEffect(() => {
     document.body.classList.add("main-bg");
     return () => document.body.classList.remove("main-bg");
@@ -40,7 +40,7 @@ function PageProductsCategory1() {
         <ServicesTab /> */}
         {/* <FAQ /> */}
         {/* <CallToAction innerPageStyle /> */}
-        <LightFooter  />
+        <LightFooter />
       </main>
     </>
   );

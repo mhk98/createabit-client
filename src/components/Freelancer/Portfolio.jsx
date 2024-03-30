@@ -183,15 +183,29 @@ function Portfolio() {
             </div>
           </div>
         </div> */}
-        <h6 className="mt-30 dot-titl-non">Product</h6>
-        <h2 className="fz-50 my-3">Feature Products</h2>
-        <p className="mb-30">
-          We offer various kinds of digital services to help organizations with
-          better possibilities to increase the revenue.We are one stop service
-          provider to digitize your business from creating standard to providing
-          excellent service in more effective ways by assessing the steps and
-          even to help businesses to perform in the future
-        </p>
+        <div className="sec-lg-head mb-80">
+          <div className="row">
+            <div className="col-lg-6">
+              <div className="position-re">
+                <h6 className="dot-titl-non mb-15 wow fadeIn">Products</h6>
+                <h2 className="d-rotate wow">
+                  <span className="rotate-text">Feature Products</span>
+                </h2>
+              </div>
+            </div>
+            <div className="col-lg-6 d-flex align-items-center">
+              <div className="text wow fadeIn">
+                <p>
+                  We offer the full spectrum of services to help organizations
+                  work better. Everything from creating standards of excellence
+                  services for your business to work in more effective ways,
+                  assessing how you’re doing, and helping you perform even
+                  better in future.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
         <div className="gallery">
           <div className="grid row max-margin">
             {data.gallery.map((item) => (

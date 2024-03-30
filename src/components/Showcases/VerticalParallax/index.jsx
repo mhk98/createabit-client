@@ -3,7 +3,7 @@ import Link from "next/link";
 //= Scripts
 import parallaxieGroup from "@/common/parallaxieGroup";
 
-function VerticalParallax(lightMode) {
+function VerticalParallax({ lightMode }) {
   useEffect(() => {
     parallaxieGroup(`.bg-img.parallaxie`, 0.2);
   }, []);

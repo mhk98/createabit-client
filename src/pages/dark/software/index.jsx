@@ -2,41 +2,38 @@ import { useEffect } from "react";
 //= Packages
 import Head from "next/head";
 //= Layout
-import Layout from "@/layouts/default";
+import Layout from "@/layouts/showcases";
+//= Scripts
+import customScript from "@/common/marketing-agency-customjs";
+import showcaseScript from "@/common/showcase-script";
 //= Components
 import Loader from "@/components/Common/Loader";
-import Software from "@/components/InnerPages/Software/Software";
-import DarkFooter from "../dark-footer";
+import FrameSlider from "@/components/Showcases/FrameSlider";
+import Menu from "@/components/Showcases/Menu";
 import DarkNavbar from "../dark-navbar";
 
-function SoftwareProduct() {
+function ShowcaseFrameSlider() {
   useEffect(() => {
-    document.body.classList.add("main-bg");
-    return () => document.body.classList.remove("main-bg");
+    customScript();
+    showcaseScript.demo();
   }, []);
-
-  const headerMetadata = {
-    subTitle: "WHAT CAN WE DO ?",
-    title: "We combine our passion for design and code.",
-    text: "SOFTWARE",
-  };
 
   return (
     <>
       <Head>
-        <title>Createabit - Software</title>
+        <title>Createabit - Frame Slider</title>
       </Head>
 
       <Loader />
-      <DarkNavbar></DarkNavbar>
+      <DarkNavbar />
+      <Menu />
       <main>
-        <Software />
+        <FrameSlider />
       </main>
-      <DarkFooter />
     </>
   );
 }
 
-SoftwareProduct.getLayout = (page) => <Layout>{page}</Layout>;
+ShowcaseFrameSlider.getLayout = (page) => <Layout>{page}</Layout>;
 
-export default SoftwareProduct;
+export default ShowcaseFrameSlider;

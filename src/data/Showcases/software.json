@@ -17,42 +17,28 @@
     "id": 3,
     "number": "03",
     "type": "Branding",
-    "title": "AUTO SHOP MANGER",
+    "title": "Auto Shop Manager",
     "image": "/dark/assets/imgs/works/full/3.jpg"
   },
   {
     "id": 4,
     "number": "04",
     "type": "Photography",
-    "title": "April willow flower",
+    "title": "SOS",
     "image": "/dark/assets/imgs/works/full/4.jpg"
   },
   {
     "id": 5,
-    "number": "05",
-    "type": "Design",
-    "title": "Step Over",
-    "image": "/dark/assets/imgs/works/full/1.jpg"
+    "number": "04",
+    "type": "Photography",
+    "title": "Easy Grocery",
+    "image": "/dark/assets/imgs/works/full/4.jpg"
   },
   {
     "id": 6,
-    "number": "06",
-    "type": "ART Design",
-    "title": "Snowy Zero",
-    "image": "/dark/assets/imgs/works/full/2.jpg"
-  },
-  {
-    "id": 7,
-    "number": "07",
-    "type": "Design",
-    "title": "Fun Bike",
-    "image": "/dark/assets/imgs/works/full/3.jpg"
-  },
-  {
-    "id": 8,
-    "number": "08",
-    "type": "Apps",
-    "title": "Mobile Apps",
+    "number": "04",
+    "type": "Photography",
+    "title": "ERP",
     "image": "/dark/assets/imgs/works/full/4.jpg"
   }
 ]

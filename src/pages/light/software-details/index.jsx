@@ -9,8 +9,6 @@ import About from "@/components/InnerPages/SoftwareDetails/About";
 import CallToAction from "@/components/InnerPages/SoftwareDetails/CallToAction";
 import Content from "@/components/InnerPages/SoftwareDetails/Content";
 import Header from "@/components/InnerPages/SoftwareDetails/Header";
-import DarkFooter from "../dark-footer";
-import DarkNavbar from "../dark-navbar";
 import LightFooter from "../light-footer";
 import LightNavbar from "../light-navbar";
 

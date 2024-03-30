@@ -12,6 +12,7 @@ import Portfolio from "@/components/InnerPages/Services/Portfolio";
 import CallToAction from "@/components/Startup/CallToAction";
 import LightFooter from "../light-footer";
 import LightNavbar from "../light-navbar";
+import Products from "@/components/InnerPages/Products/products";
 
 function PageServicesLight() {
   useEffect(() => {
@@ -37,7 +38,7 @@ function PageServicesLight() {
       <main>
         <Header data={headerMetadata} subBg={true} />
         {/* <Services lightMode /> */}
-        <Portfolio />
+        <Products />
         <ServicesTab lightMode />
         {/* <FAQ /> */}
         <CallToAction innerPageStyle />

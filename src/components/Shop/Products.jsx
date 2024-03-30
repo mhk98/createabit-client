@@ -449,7 +449,7 @@ function Products() {
                     <div className="item mb-50">
                       <div className="img">
                         <Image
-                          src={`https://createabit-backend.onrender.com/${item.Image}`}
+                          src={`https://createabit-backend.onrender.com/${item.image}`}
                           alt=""
                           width={300}
                           height={200}
@@ -551,7 +551,7 @@ function Products() {
                     <div className="item mb-50">
                       <div className="img">
                         <Image
-                          src={`https://createabit-backend.onrender.com/${item.Image}`}
+                          src={`https://createabit-backend.onrender.com/${item.image}`}
                           alt=""
                           width={300}
                           height={200}

@@ -108,7 +108,7 @@ function Header({ lightMode }) {
             </div>
             <div className="col-lg-3">
               <div className="md-hide explore-radius1">
-                <Link href="/dark/page-about" className="hover-this">
+                <Link href="/dark/business-solution" className="hover-this">
                   <div className="circle-button in-bord hover-anim">
                     <div className="rotate-circle fz-30 text-u">
                       <svg className="textcircle" viewBox="0 0 500 500">
@@ -301,7 +301,7 @@ function Header({ lightMode }) {
             </div>
             <div className="col-lg-4 explore-radius">
               <div className="">
-                <Link href="/dark/page-about" className="hover-this">
+                <Link href="/dark/page-abouts" className="hover-this">
                   <div className="circle-button in-bord hover-anim">
                     <div className="rotate-circle fz-30 text-u">
                       <svg className="textcircle" viewBox="0 0 500 500">

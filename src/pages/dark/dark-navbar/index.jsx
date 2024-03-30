@@ -192,19 +192,31 @@ function DarkNavbar({ lightMode, alwaysDark, darkOnScroll }) {
                     </Link>
                   </div>
                 </li>
+
                 <li
                   onMouseEnter={handleMouseEnter}
                   onMouseLeave={handleMouseLeave}
                 >
                   <div className="o-hidden">
-                    <Link href="/dark/page-abouts/" className="link">
-                      <span className="fill-text" data-text="Who We Are">
-                        Who We Are
+                    <Link href="/dark/business-solution/" className="link">
+                      <span className="fill-text" data-text="Business Solution">
+                        Business Solution
                       </span>
                     </Link>
                   </div>
                 </li>
-
+                <li
+                  onMouseEnter={handleMouseEnter}
+                  onMouseLeave={handleMouseLeave}
+                >
+                  <div className="o-hidden">
+                    <Link href="/dark/software/" className="link">
+                      <span className="fill-text" data-text="Software Product">
+                        Software Product
+                      </span>
+                    </Link>
+                  </div>
+                </li>
                 <li
                   onMouseEnter={handleMouseEnter}
                   onMouseLeave={handleMouseLeave}
@@ -261,7 +273,7 @@ function DarkNavbar({ lightMode, alwaysDark, darkOnScroll }) {
                     <div className="cursor-pointer link dmenu">
                       <Link href="/dark/page-services/" className="">
                         <span className="fill-text" data-text="Services">
-                          Service
+                          Services
                         </span>
                       </Link>
                       <i></i>
@@ -302,19 +314,7 @@ function DarkNavbar({ lightMode, alwaysDark, darkOnScroll }) {
                     </ul>
                   </div>
                 </li>
-
-                <li
-                  onMouseEnter={handleMouseEnter}
-                  onMouseLeave={handleMouseLeave}
-                >
-                  <div className="o-hidden">
-                    <Link href="/dark/software/" className="link">
-                      <span className="fill-text" data-text="Software">
-                        Software
-                      </span>
-                    </Link>
-                  </div>
-                </li>
+              
 
                 {/* <li
                   onMouseEnter={handleMouseEnter}
@@ -341,7 +341,20 @@ function DarkNavbar({ lightMode, alwaysDark, darkOnScroll }) {
                   </div>
                 </li> */}
 
-                {userLoggedIn ? (
+                <li
+                  onMouseEnter={handleMouseEnter}
+                  onMouseLeave={handleMouseLeave}
+                >
+                  <div className="o-hidden">
+                    <Link href="/dark/page-abouts/" className="link">
+                      <span className="fill-text" data-text="Who We Are">
+                        Who We Are
+                      </span>
+                    </Link>
+                  </div>
+                </li>
+
+                {/* {userLoggedIn ? (
                   <li
                     onMouseEnter={handleMouseEnter}
                     onMouseLeave={handleMouseLeave}
@@ -371,7 +384,7 @@ function DarkNavbar({ lightMode, alwaysDark, darkOnScroll }) {
                       </Link>
                     </div>
                   </li>
-                )}
+                )} */}
 
                 <li
                   onMouseEnter={handleMouseEnter}
@@ -395,14 +408,42 @@ function DarkNavbar({ lightMode, alwaysDark, darkOnScroll }) {
             <div className="cont-info full-width">
               <div className="item">
                 <h5 className="mb-15">Get In Touch</h5>
-                <p>901 South Highland St, Suite # 301,Arlington, VA 22041</p>
+
                 <p className="mt-5 mb-5 underline main-color">
                   <a href="">703-347-6512</a>
                 </p>
                 <p>
                   <a href="">info@createabit.com</a>
                 </p>
+                {userLoggedIn ? (
+                  <div className="mt-10">
+                    <Link
+                      href=""
+                      className="link butn butn-md butn-bord radius-30"
+                    >
+                      <span
+                        onClick={handleLogout}
+                        className="fill-text"
+                        data-text="LogOut"
+                      >
+                        LogOut
+                      </span>
+                    </Link>
+                  </div>
+                ) : (
+                  <div className="mt-10">
+                    <Link href="/dark/login/" className="link">
+                      <span
+                        className="fill-text butn butn-md butn-bord radius-30"
+                        data-text="Login"
+                      >
+                        Login
+                      </span>
+                    </Link>
+                  </div>
+                )}
               </div>
+
               <div className="search-form">
                 <div className="form-group">
                   <input type="text" name="search" placeholder="Search" />
@@ -413,22 +454,34 @@ function DarkNavbar({ lightMode, alwaysDark, darkOnScroll }) {
               </div>
               <ul className="rest social-text d-flex mt-50 fz-13">
                 <li className="mr-20">
-                  <a href="#0" className="hover-this">
+                  <a
+                    href="https://www.facebook.com/CreateAbitDesigns"
+                    className="hover-this"
+                  >
                     <span className="hover-anim">Facebook</span>
                   </a>
                 </li>
                 <li className="mr-20">
-                  <a href="#0" className="hover-this">
+                  <a
+                    href="https://twitter.com/createabit"
+                    className="hover-this"
+                  >
                     <span className="hover-anim">Twitter</span>
                   </a>
                 </li>
                 <li className="mr-20">
-                  <a href="#0" className="hover-this">
+                  <a
+                    href="https://www.linkedin.com/in/createabit-corp-913a89109/"
+                    className="hover-this"
+                  >
                     <span className="hover-anim">LinkedIn</span>
                   </a>
                 </li>
                 <li>
-                  <a href="#0" className="hover-this">
+                  <a
+                    href="https://www.instagram.com/createabitdesign/"
+                    className="hover-this"
+                  >
                     <span className="hover-anim">Instagram</span>
                   </a>
                 </li>

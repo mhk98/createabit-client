@@ -5,9 +5,6 @@ import Head from "next/head";
 import Layout from "@/layouts/default";
 //= Components
 import Loader from "@/components/Common/Loader";
-import Software from "@/components/InnerPages/Software/Software";
-import DarkFooter from "../dark-footer";
-import DarkNavbar from "../dark-navbar";
 import LightNavbar from "../light-navbar";
 import LightFooter from "../light-footer";
 import HomeSoftware from "@/components/HomeMain/HomeSoftware";

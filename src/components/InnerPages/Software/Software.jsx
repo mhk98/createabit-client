@@ -36,6 +36,18 @@ function Software() {
   return (
     <section className="inter-links-center horizontal section-padding d-flex align-items-center">
       <div className="container-xxl">
+        <div style={{ marginTop: "170px" }}>
+          <h3 className="text text-center ">
+            Empowering Business Across Industries
+          </h3>
+          <p className="text-center">
+            At CreateABit Corp, we pride ourselves on serving diverse industries
+            with cutting-edge technology solutions and innovative crevice
+            display products. Whether you are just starting your business
+            journey or aiming to expand and grow your existing enterprise, we
+            are here to support you every step of the way. “”
+          </p>
+        </div>
         <div className="row justify-content-center">
           <div className="col-lg-10">
             <div className="links-text d-flex justify-content-center">
@@ -49,7 +61,7 @@ function Software() {
                   >
                     <h2>
                       <span className="num">{item.number}.</span>
-                      <Link href="/dark/software-details">
+                      <Link href="/dark/restaurant-power">
                         <span className="tag sub-title">{item.type}</span>{" "}
                         <span className="text">{item.title}</span>
                       </Link>

@@ -3,56 +3,56 @@
     "id": 1,
     "number": "01",
     "type": "Design",
-    "title": "Everybody sunshine",
+    "title": "Restaurant Power",
     "image": "/dark/assets/imgs/works/full/1.jpg"
   },
   {
     "id": 2,
     "number": "02",
     "type": "Branding",
-    "title": "Who Dares Wins",
+    "title": "Grocery Power",
     "image": "/dark/assets/imgs/works/full/2.jpg"
   },
   {
     "id": 3,
     "number": "03",
     "type": "Branding",
-    "title": "Fountain Studio",
+    "title": "Retail & Mall",
     "image": "/dark/assets/imgs/works/full/3.jpg"
   },
   {
     "id": 4,
     "number": "04",
     "type": "Photography",
-    "title": "April willow flower",
+    "title": "Education",
     "image": "/dark/assets/imgs/works/full/4.jpg"
   },
   {
     "id": 5,
     "number": "05",
     "type": "Design",
-    "title": "Step Over",
+    "title": "Real Estate & Corporation Office",
     "image": "/dark/assets/imgs/works/full/1.jpg"
   },
   {
     "id": 6,
     "number": "06",
     "type": "ART Design",
-    "title": "Snowy Zero",
+    "title": "Religious Venues",
     "image": "/dark/assets/imgs/works/full/2.jpg"
   },
   {
     "id": 7,
     "number": "07",
     "type": "Design",
-    "title": "Fun Bike",
+    "title": "Healthcare",
     "image": "/dark/assets/imgs/works/full/3.jpg"
   },
   {
     "id": 8,
     "number": "08",
     "type": "Apps",
-    "title": "Mobile Apps",
+    "title": "Movie Theaters & Stadium",
     "image": "/dark/assets/imgs/works/full/4.jpg"
   }
 ]

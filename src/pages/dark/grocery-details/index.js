@@ -6,8 +6,8 @@ import Layout from "@/layouts/default";
 //= Components
 import Loader from "@/components/Common/Loader";
 import DarkNavbar from "../dark-navbar";
-import ShowcaseVerticalParallax from "../showcase-parallax";
 import DarkFooter from "../dark-footer";
+import ShowcaseVerticalParallax from "../product";
 
 function GroceryDetails() {
   useEffect(() => {

@@ -184,19 +184,34 @@ function LightNavbar({ lightMode, alwaysDark, darkOnScroll }) {
                     </Link>
                   </div>
                 </li>
+
                 <li
                   onMouseEnter={handleMouseEnter}
                   onMouseLeave={handleMouseLeave}
                 >
                   <div className="o-hidden">
-                    <Link href="/light/page-abouts/" className="link">
-                      <span className="fill-text" data-text="Who We Are">
-                        Who We Are
+                    <Link href="/light/business-solution/" className="link">
+                      <span className="fill-text" data-text="Business Solution">
+                        Business Solution
                       </span>
                     </Link>
                   </div>
                 </li>
-
+                <li
+                  onMouseEnter={handleMouseEnter}
+                  onMouseLeave={handleMouseLeave}
+                >
+                  <div className="o-hidden">
+                    <Link
+                      href="/light/showcase-interactive-center-horizontal/"
+                      className="link"
+                    >
+                      <span className="fill-text" data-text="Software Product">
+                        Software Product
+                      </span>
+                    </Link>
+                  </div>
+                </li>
                 <li
                   onMouseEnter={handleMouseEnter}
                   onMouseLeave={handleMouseLeave}
@@ -244,6 +259,7 @@ function LightNavbar({ lightMode, alwaysDark, darkOnScroll }) {
                     </ul>
                   </div>
                 </li>
+
                 <li
                   onMouseEnter={handleMouseEnter}
                   onMouseLeave={handleMouseLeave}
@@ -252,8 +268,8 @@ function LightNavbar({ lightMode, alwaysDark, darkOnScroll }) {
                   <div className="o-hidden">
                     <div className="cursor-pointer link dmenu">
                       <Link href="/light/page-services/" className="">
-                        <span className="fill-text" data-text="Service">
-                          Service
+                        <span className="fill-text" data-text="Services">
+                          Services
                         </span>
                       </Link>
                       <i></i>
@@ -300,18 +316,15 @@ function LightNavbar({ lightMode, alwaysDark, darkOnScroll }) {
                   onMouseLeave={handleMouseLeave}
                 >
                   <div className="o-hidden">
-                    <Link
-                      href="/light/showcase-interactive-center-horizontal/"
-                      className="link"
-                    >
-                      <span className="fill-text" data-text="Software">
-                        Software
+                    <Link href="/light/page-abouts/" className="link">
+                      <span className="fill-text" data-text="Who We Are">
+                        Who We Are
                       </span>
                     </Link>
                   </div>
                 </li>
 
-                <li
+                {/* <li
                   onMouseEnter={handleMouseEnter}
                   onMouseLeave={handleMouseLeave}
                 >
@@ -322,7 +335,7 @@ function LightNavbar({ lightMode, alwaysDark, darkOnScroll }) {
                       </span>
                     </Link>
                   </div>
-                </li>
+                </li> */}
 
                 <li
                   onMouseEnter={handleMouseEnter}
@@ -346,13 +359,40 @@ function LightNavbar({ lightMode, alwaysDark, darkOnScroll }) {
             <div className="cont-info full-width">
               <div className="item">
                 <h5 className="mb-15">Get In Touch</h5>
-                <p>541 Melville Geek, Palo Alto, CA 94301</p>
+
                 <p className="mt-5 mb-5 underline main-color">
-                  <a href="#0">+1 840 841 25 69</a>
+                  <a href="">703-347-6512</a>
                 </p>
                 <p>
-                  <a href="#0">GeekFolio_website@gmail.com</a>
+                  <a href="">info@createabit.com</a>
                 </p>
+                {userLoggedIn ? (
+                  <div className="mt-10">
+                    <Link
+                      href=""
+                      className="link butn butn-md butn-bord radius-30"
+                    >
+                      <span
+                        onClick={handleLogout}
+                        className="fill-text"
+                        data-text="LogOut"
+                      >
+                        LogOut
+                      </span>
+                    </Link>
+                  </div>
+                ) : (
+                  <div className="mt-10">
+                    <Link href="/dark/login/" className="link">
+                      <span
+                        className="fill-text butn butn-md butn-bord radius-30"
+                        data-text="Login"
+                      >
+                        Login
+                      </span>
+                    </Link>
+                  </div>
+                )}
               </div>
               <div className="search-form">
                 <div className="form-group">
@@ -364,22 +404,34 @@ function LightNavbar({ lightMode, alwaysDark, darkOnScroll }) {
               </div>
               <ul className="rest social-text d-flex mt-50 fz-13">
                 <li className="mr-20">
-                  <a href="#0" className="hover-this">
+                  <a
+                    href="https://www.facebook.com/CreateAbitDesigns"
+                    className="hover-this"
+                  >
                     <span className="hover-anim">Facebook</span>
                   </a>
                 </li>
                 <li className="mr-20">
-                  <a href="#0" className="hover-this">
+                  <a
+                    href="https://twitter.com/createabit"
+                    className="hover-this"
+                  >
                     <span className="hover-anim">Twitter</span>
                   </a>
                 </li>
                 <li className="mr-20">
-                  <a href="#0" className="hover-this">
+                  <a
+                    href="https://www.linkedin.com/in/createabit-corp-913a89109/"
+                    className="hover-this"
+                  >
                     <span className="hover-anim">LinkedIn</span>
                   </a>
                 </li>
                 <li>
-                  <a href="#0" className="hover-this">
+                  <a
+                    href="https://www.instagram.com/createabitdesign/"
+                    className="hover-this"
+                  >
                     <span className="hover-anim">Instagram</span>
                   </a>
                 </li>

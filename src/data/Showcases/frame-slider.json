@@ -4,34 +4,41 @@
     "background": "/dark/assets/imgs/works/full/1.jpg",
     "year": "2023",
     "type": "Branding",
-    "title": "Basket Lamp"
+    "title": "Display Lab"
   },
   {
     "id": 2,
     "background": "/dark/assets/imgs/works/full/2.jpg",
     "year": "2023",
     "type": "Branding",
-    "title": "Moon Light"
+    "title": "Event Chief"
   },
   {
     "id": 3,
     "background": "/dark/assets/imgs/works/full/3.jpg",
     "year": "2023",
     "type": "Branding",
-    "title": "Red Glasses"
+    "title": "Auto Shop Manager"
   },
   {
     "id": 4,
     "background": "/dark/assets/imgs/works/full/4.jpg",
     "year": "2023",
     "type": "Branding",
-    "title": "Waffile Maker"
+    "title": "SOS"
   },
   {
     "id": 5,
     "background": "/dark/assets/imgs/works/full/5.jpg",
     "year": "2023",
     "type": "Branding",
-    "title": "Headphone"
+    "title": "ERP"
+  },
+  {
+    "id": 6,
+    "background": "/dark/assets/imgs/works/full/1.jpg",
+    "year": "2023",
+    "type": "Branding",
+    "title": "Eazy Grocery"
   }
 ]

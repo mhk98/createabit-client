@@ -12,8 +12,64 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Image from "next/image";
 import web_banner from "../../../../images/iPhone-App-Development.png";
 import service1 from "../../../../images/service/web-development.png";
+import { useState } from "react";
+import Button from "react-bootstrap/Button";
+import Modal from "react-bootstrap/Modal";
 
 function Service1() {
+  const [show, setShow] = useState(false);
+
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
+
+  const [name, setName] = useState("");
+  const [address, setAddress] = useState("");
+  const [subject, setSubject] = useState("");
+  const [message, setMessage] = useState("");
+  const [phone, setPhone] = useState("");
+  // const handleSendMail = async () => {
+  //   const data = {
+  //     senderAddress: address,
+  //     senderPhone: phone,
+  //     senderName: name,
+  //     mailerSubject: subject,
+  //     mailerMessage: message,
+  //   };
+  //   const res = await axios.post(
+  //     "https://server.arcfbd.org/api/v1/contact/create-contact",
+  //     data
+  //   );
+  // };
+
+  const handleSendMail = async () => {
+    try {
+      const data = {
+        mailAddress: address,
+        mailerName: name,
+        mailerSubject: subject,
+        mailerMessage: message,
+        senderPhone: phone,
+      };
+
+      console.log("data", data);
+      //     // Use IP address instead of hostname
+      const res = await axios.post(
+        "https://createabit-backend.onrender.com/api/v1/contact/create-contact", // replace x.x.x.x with the actual IP address
+        data
+      );
+
+      if (res.data.data.status === "Success") {
+        toast.success("Successfully send email");
+      } else {
+        console.error(
+          "Failed to send mail. Server returned status:",
+          res.status
+        );
+      }
+    } catch (error) {
+      console.error("An error occurred while sending the mail:", error.message);
+    }
+  };
   return (
     <div>
       <div className="container service">
@@ -38,9 +94,101 @@ function Service1() {
               that directly hit to the targeted area.
             </p>
             <div className="purchase" style={{ marginTop: "16px" }}>
-              <a className="butn butn-md butn-bord radius-30">
+              <button
+                className="butn butn-md butn-bord radius-30"
+                onClick={handleShow}
+              >
                 <span>SEND US YOUR QUERIES! </span>
-              </a>
+              </button>
+
+              <Modal
+                show={show}
+                onHide={handleClose}
+                animation={false}
+                className="mt-80"
+              >
+                {/* <Modal.Header closeButton></Modal.Header> */}
+                <Modal.Body>
+                  <div className="contact-page__form-box">
+                    <form
+                      onSubmit={(e) => {
+                        e.preventDefault();
+                        handleSendMail();
+                      }}
+                      // action="assets/inc/sendemail.php"
+                      className="contact-page__form contact-form-validated mt-30"
+                      // noValidate="novalidate"
+                    >
+                      <div className="row">
+                        <div className="col-xl-6">
+                          <div className="contact-form__input-box">
+                            <input
+                              onChange={(e) => setName(e.target.value)}
+                              type="text"
+                              placeholder="Your name"
+                              name="name"
+                            />
+                          </div>
+                        </div>
+                        <div className="col-xl-6">
+                          <div className="contact-form__input-box">
+                            <input
+                              onChange={(e) => setAddress(e.target.value)}
+                              type="email"
+                              placeholder="Email address"
+                              name="email"
+                            />
+                          </div>
+                        </div>
+                        <div className="col-xl-6">
+                          <div className="contact-form__input-box">
+                            <input
+                              onChange={(e) => setPhone(e.target.value)}
+                              type="text"
+                              placeholder="Phone"
+                              name="phone"
+                            />
+                          </div>
+                        </div>
+                        <div className="col-xl-6">
+                          <div className="contact-form__input-box">
+                            <input
+                              onChange={(e) => setSubject(e.target.value)}
+                              type="text"
+                              placeholder="Subject"
+                              name="subject"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                      <div className="row">
+                        <div className="col-xl-12">
+                          <div className="contact-form__input-box text-message-box">
+                            <textarea
+                              onChange={(e) => setMessage(e.target.value)}
+                              name="message"
+                              placeholder="Write a message"
+                              defaultValue={""}
+                            />
+                          </div>
+                          <div className="contact-form__btn-box">
+                            <input
+                              type="submit"
+                              className="thm-btn contact-form__btn"
+                              value="Send a message"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                </Modal.Body>
+                <Modal.Footer>
+                  <Button variant="secondary" onClick={handleClose}>
+                    Close
+                  </Button>
+                </Modal.Footer>
+              </Modal>
             </div>
           </div>
         </div>

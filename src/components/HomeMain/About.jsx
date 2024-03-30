@@ -4,6 +4,7 @@ import about from "../../../images/about/01.jpg";
 import about1 from "../../../images/about/1.jpg";
 import data from "@/data/HomeMain/about1.json";
 import data1 from "@/data/HomeMain/about2.json";
+import Intro from "../CreativeAgency/Intro";
 function About({ lightMode }) {
   console.log(data);
   console.log(data1);
@@ -76,93 +77,8 @@ function About({ lightMode }) {
               </div>
             </div>
           </div>
-          <div
-            className="justify-between gap-5 row"
-            style={{ marginTop: "50px" }}
-          >
-            <div className="col-lg-6 rest fadeInUp">
-              <div className="imgs md-mb50">
-                <div className="img1">
-                  <div className="o-hidden">
-                    <div className=" wow">
-                      <Image src={about} alt="" />
-                    </div>
-                  </div>
-                </div>
-                <div className="img2">
-                  <div className="o-hidden">
-                    <div className=" wow">
-                      <Image src={about1} alt="" />
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="col-lg-5 valign rest fadeInUp">
-              <div className="cont">
-                {/* <h2 className="d-rotate wow">
-                  <span className="rotate-text">
-                    Achieve Sustainable Revenue Growth in Your Business.
-                  </span>
-                </h2> */}
-                <div className="feat mt-80">
-                  <div
-                    className="item-flex d-flex align-items-center mb-50 wow fadeInUp"
-                    data-wow-delay=".4s"
-                  >
-                    <div>
-                      <div className="icon-img-50">
-                        <img
-                          src={`/${
-                            lightMode ? "light" : "dark"
-                          }/assets/imgs/serv-icons/0.png`}
-                          // src="/dark/assets/imgs/serv-icons/0.png"
-                          alt=""
-                        />
-                      </div>
-                    </div>
-                    <div className="cont ml-30 fadeIn">
-                      <h6>Elevate Your Experience</h6>
-                      <p className="fz-15">
-                        Unlocking Smooth Conversations with Every Step of the
-                        Way with Our Unrivaled High Standard Service.
-                      </p>
-                    </div>
-                  </div>
-                  <div
-                    className="item-flex d-flex align-items-center wow fadeInUp"
-                    data-wow-delay=".8s"
-                  >
-                    <div>
-                      <div className="icon-img-50">
-                        <img
-                          src={`/${
-                            lightMode ? "light" : "dark"
-                          }/assets/imgs/serv-icons/1.png`}
-                          alt=""
-                        />
-                      </div>
-                    </div>
-                    <div className="cont ml-30 fadeIn">
-                      <h6>Stay connected</h6>
-                      <p className="fz-15">
-                        With ease using our user-friendly communication
-                        solutions.
-                      </p>
-                    </div>
-                  </div>
-                  <div className="mt-20 ml-70 ">
-                    <Link
-                      href="/dark/industry"
-                      className="classic butn butn-md butn-bord radius-30"
-                    >
-                      <span className="word">Read More</span>
-                    </Link>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+
+          <Intro />
         </div>
       </section>
     </>

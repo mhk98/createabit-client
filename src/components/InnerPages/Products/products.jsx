@@ -6,9 +6,12 @@ import loadBackgroudImages from "@/common/loadBackgroudImages";
 import { useGetServicesQuery } from "@/features/service/serviceApi";
 import Image from "next/image";
 import Link from "next/link";
-import banner1 from "../../../../images/product/3D-Holographic-Signs-1.png";
-import banner3 from "../../../../images/product/POS-systems.png";
-import banner2 from "../../../../images/product/digital-signage.png";
+import banner1 from "../../../../images/service/website-design-and-development-01.png";
+import banner2 from "../../../../images/service/digital-signage.png";
+import banner3 from "../../../../images/service/Feature-of-app-development-01.png";
+import banner4 from "../../../../images/service/Digital-Marketing-_-Seo-01.png";
+import banner5 from "../../../../images/service/Graphic.png";
+import banner6 from "../../../../images/service/Video-Aanimation-01.png";
 
 function Products({ lightMode }) {
   const { data, isLoading, isSuccess, isError, error } = useGetServicesQuery();
@@ -72,18 +75,19 @@ function Products({ lightMode }) {
         <div className="container">
           <div className="software-section mb-15">
             <div className="software-img">
-              <Image src={banner2} alt="" />
+              <Image src={banner1} alt="" />
             </div>
 
             <div className="software-content">
-              <h3 className="mb-15">DIGITAL DISPLAY</h3>
+              <h3 className="mb-15">Website Development</h3>
 
               <p>
-                Digital displays are getting quite popular now a day for its
-                attractive features. We brought very new Digital displays with
-                lots of features and technology. We have various types of LCD
-                Wall Video Displays, Wall Mount Displays, Stand Alone Signage,
-                Touch Table, OutDoor Signage, Multimedia Kiosk.
+                Our web application development department is equipped with the
+                state-of-the-art equipment and a highly-trained team of
+                development that generates outstanding ideas for our client’s
+                project. They work closely with you to generate optimal outcomes
+                for your application/ software concerns. We complete your
+                project within the given deadline.
               </p>
 
               <Link
@@ -100,13 +104,15 @@ function Products({ lightMode }) {
         <div className="container">
           <div className=" software-section">
             <div className="software-img">
-              <h3 className="mb-15">3D HOLOGRAPHIC SIGNS</h3>
+              <h3 className="mb-15">Web Application</h3>
 
               <p>
-                We came up with 3D holographic Signage that has spinning led fan
-                that creates dynamic visual display in 3 Dimension without any
-                kind of glasses. It will provide you enriched quality visual for
-                advertising.
+                Our web application development department is equipped with the
+                state-of-the-art equipment and a highly-trained team of
+                development that generates outstanding ideas for our client’s
+                project. They work closely with you to generate optimal outcomes
+                for your application/ software concerns. We complete your
+                project within the given deadline.
               </p>
 
               <Link
@@ -120,7 +126,7 @@ function Products({ lightMode }) {
             </div>
 
             <div className="software-content">
-              <Image src={banner1} alt="" />
+              <Image src={banner2} alt="" />
             </div>
           </div>
         </div>
@@ -131,14 +137,15 @@ function Products({ lightMode }) {
             </div>
 
             <div className="software-content">
-              <h3 className="mb-15">POS SYSTEMS</h3>
+              <h3 className="mb-15">Mobile Apps Development</h3>
 
               <p>
-                From the very beginning till now we are proving one of the best
-                Point of sales System. Our POS has successfully satisfied our
-                valuable customer with Its easy handling. We deliver 24x7
-                customer service so that the business never gets interrupted for
-                any inconvenience.
+                We specialize in design and development for mobile apps and
+                websites. We design websites and mobile apps that are further
+                facilitated with a high-performance rate. Our team of developers
+                and designers at Createabit Design are acquainted with the
+                creation and development of iOS and Android apps that are
+                user-specific and mobile-friendly-specific.
               </p>
 
               <Link
@@ -149,6 +156,91 @@ function Products({ lightMode }) {
               >
                 <span>View Details</span>
               </Link>
+            </div>
+          </div>
+        </div>
+
+        <div className="container">
+          <div className=" software-section">
+            <div className="software-img">
+              <h3 className="mb-15">Digital Marketing & SEO</h3>
+
+              <p>
+                Createabit Design focuses on utilizes the approach that focuses
+                on users to generate solutions for digital marketing and SEO
+                areas. We use business-oriented design solutions to cater to the
+                digital marketing and SEO concerns of our clients.
+              </p>
+
+              <Link
+                href={
+                  lightMode ? "/light/page-service4" : "/dark/page-service4"
+                }
+                className="mt-4 butn butn-md butn-bord radius-30"
+              >
+                <span>View Details</span>
+              </Link>
+            </div>
+
+            <div className="software-content">
+              <Image src={banner4} alt="" />
+            </div>
+          </div>
+        </div>
+
+        <div className="container">
+          <div className=" software-section">
+            <div className="software-img">
+              <Image src={banner5} alt="" />
+            </div>
+
+            <div className="software-content">
+              <h3 className="mb-15">Graphics Design & Printing</h3>
+
+              <p>
+                Our team at Createabit Design is responsible for creating
+                compelling graphic designs and prints to add an appeal to your
+                business to maintain its sustainability. We invest our complete
+                creativity, resources, and efforts to come up with 100%
+                satisfactory.
+              </p>
+
+              <Link
+                href={
+                  lightMode ? "/light/page-service5" : "/dark/page-service5"
+                }
+                className="mt-4 butn butn-md butn-bord radius-30"
+              >
+                <span>View Details</span>
+              </Link>
+            </div>
+          </div>
+        </div>
+
+        <div className="container">
+          <div className=" software-section">
+            <div className="software-img">
+              <h3 className="mb-15">Video & Animation</h3>
+
+              <p>
+                At Createabit Design, our team of designers and animators are
+                responsible for the conversion of abstract ideas to animations
+                and motion graphics. Our creative and innovative animated videos
+                are highly regarded for their quality and sound.
+              </p>
+
+              <Link
+                href={
+                  lightMode ? "/light/page-service6" : "/dark/page-service6"
+                }
+                className="mt-4 butn butn-md butn-bord radius-30"
+              >
+                <span>View Details</span>
+              </Link>
+            </div>
+
+            <div className="software-content">
+              <Image src={banner6} alt="" />
             </div>
           </div>
         </div>
